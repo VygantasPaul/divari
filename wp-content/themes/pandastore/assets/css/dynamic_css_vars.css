@@ -1,0 +1,114 @@
+/* -------------------------------------------
+	Alpha Config Variables
+------------------------------------------- */
+html {
+  --alpha-container-width: 1280px;
+  --alpha-container-fluid-width: 1820px;
+  --alpha-site-bg-color: #fff;
+  --alpha-site-width: false;
+  --alpha-site-margin: 0;
+  --alpha-site-gap: 0;
+  --alpha-primary-color: #ff9c28;
+  --alpha-primary-color-dark: #ff9519;
+  --alpha-primary-color-light: #ffa842;
+  --alpha-secondary-color: #54524d;
+  --alpha-dark-color: #333;
+  --alpha-dim-color: #54524d;
+  --alpha-light-color: #ccc;
+  --alpha-primary-color-hover: #ff9c28;
+  --alpha-primary-color-alpha: rgba(40,121,254, 0.8);
+  --alpha-secondary-color-hover: #666;
+  --alpha-dark-color-hover: #454545;
+  --alpha-dim-color-hover: #666;
+  --alpha-light-color-hover: #dedede;
+  --alpha-white-color: #fff;
+  --alpha-body-font-family: Josefin Sans, sans-serif;
+  --alpha-body-font-weight: 300;
+  --alpha-body-font-size: 16px;
+  --alpha-body-line-height: 26px;
+  --alpha-body-color: #777;
+  --alpha-typo-ratio: 1;
+  --alpha-heading-font-weight: 400;
+  --alpha-heading-line-height: 1.2;
+  --alpha-heading-letter-spacing: 0;
+  --alpha-heading-text-transform: none;
+  --alpha-heading-color: #222;
+  /* Other Styles */
+  --alpha-border-radius-form: 3px;
+}
+
+.page-wrapper {
+  --alpha-page-wrapper-bg-color: #fff;
+}
+
+.page-header {
+  --alpha-ptb-bg-color: #fff7ec;
+}
+.page-header .page-title {
+  --alpha-ptb-title-font-weight: 300;
+  --alpha-ptb-title-font-size: 40px;
+  --alpha-ptb-title-line-height: 1;
+  --alpha-ptb-title-letter-spacing: 0;
+  --alpha-ptb-title-text-transform: capitalize;
+  --alpha-ptb-title-color: #222;
+}
+.page-header .page-subtitle {
+  --alpha-ptb-subtitle-font-size: 18px;
+  --alpha-ptb-subtitle-line-height: 1.8;
+  --alpha-ptb-subtitle-color: #54524d;
+}
+
+.page-title-bar {
+  --alpha-ptb-height: 220px;
+}
+
+.breadcrumb {
+  --alpha-ptb-breadcrumb-font-size: 14px;
+  --alpha-ptb-breadcrumb-color: #222;
+}
+
+.d-lazyload {
+  --alpha-lazy-load-bg: #f4f4f4;
+}
+
+.elementor-section {
+  --alpha-gap: 10px;
+}
+
+@media (max-width: 1279px) {
+  .container-fluid .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1279px) and (min-width: 480px) {
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-no,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-no {
+    width: calc( 100% - var(--alpha-gap) * 4 );
+  }
+
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-default,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-default {
+    width: calc( 100% - var(--alpha-gap) * 2 );
+  }
+
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-narrow,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-narrow {
+    width: calc( 100% - var(--alpha-gap) * 4 + 10px );
+  }
+
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-extended,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-extended {
+    width: calc( 100% - var(--alpha-gap) * 4 + 30px );
+  }
+
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-wide,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-wide {
+    width: calc( 100% - var(--alpha-gap) * 4 + 40px );
+  }
+
+  .elementor-top-section.elementor-section-boxed > .elementor-column-gap-wider,
+.elementor-section-full_width .elementor-section-boxed > .elementor-column-gap-wider {
+    width: calc( 100% - var(--alpha-gap) * 4 + 50px );
+  }
+}

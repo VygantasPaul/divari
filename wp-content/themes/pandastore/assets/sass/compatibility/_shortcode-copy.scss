@@ -1,0 +1,30 @@
+// Shortcode
+.shortcode-text {
+    display: block;
+    opacity: 0;
+    padding: 0;
+    border: none;
+    height: 1px;
+}
+.copy-toast {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    top: 50px;
+    right: 0;
+    transform: translateX( 100% );
+    transition: transform .5s;
+}
+.toast-show {
+    transform: translateX( 0 );
+}
+.toast-text {
+    padding: 15px 15px 11px 15px;
+    width: 300px;
+    color: #fff;
+    background-color: #222;
+
+    i:before {
+        margin-right: 1rem;
+    }
+}

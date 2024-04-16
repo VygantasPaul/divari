@@ -1,0 +1,65 @@
+/* -------------------------------------------
+    Animated Text
+---------------------------------------------- */
+
+@if use_component( animating-text ) {
+    .animating-text {
+        position: relative;
+    }
+
+    .animating-item {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: 1;
+
+        &.active {
+            position: relative;
+            z-index: 2;
+        }
+        &.visible {
+            visibility: visible;
+        }
+
+        > span {
+            position: relative;
+            align-self: auto;
+        }
+
+        .animating-text-rotation & {
+            perspective: 1000px;
+            transform-origin: 50% 100%;
+        }
+
+        .animating-text-croco & {
+            perspective: 1000px;
+            span {
+                transform-origin: 50% 100%;
+            }
+        }
+
+        .animating-text-scaling & {
+            perspective: 1000px;
+        }
+
+        .animating-text-typing & {
+            span {
+                overflow: hidden;
+                transform-origin: 0 50%;
+            }
+            &:after {
+                width: 2px;
+                overflow: hidden;
+                display: inline-block;
+                background-color: black;
+                animation: 1s blink step-end infinite;
+                content:'|';
+            }
+        }
+    }
+}

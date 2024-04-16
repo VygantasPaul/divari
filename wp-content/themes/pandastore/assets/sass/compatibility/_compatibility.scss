@@ -1,0 +1,275 @@
+/** Gutenburg **/
+@if use_component(gutenberg) {
+	.wp-block-calendar table.wp-calendar-table td a:hover {
+		background-color: var(--alpha-dim-color, $dim-color);
+	}
+
+	.wp-block-quote {
+		cite {
+			color: var(--alpha-dim-color, $dim-color);
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+	}
+
+	form.wp-block-search .wp-block-search__input,
+    .wc-block-product-search .wc-block-product-search__field,
+    .woocommerce-product-search input,
+    .post-password-form input[type="password"] {
+		min-height: 3.2rem;
+		font-weight: 300;
+
+		&::placeholder {
+            color: $grey-color;
+        }
+        &::-webkit-input-placeholder {
+            color: $grey-color;
+        }
+        &::-moz-placeholder {
+            color: $grey-color;
+        }
+	}
+
+	.wp-block-search {
+		&.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+			border-color: $border-color-light;
+
+			.wp-block-search__input {
+				padding-#{$left}: 10px;
+			}
+		}
+
+		.wp-block-search__button {
+			color: var(--alpha-heading-color);
+			background-color: #fff;
+			border: 0;
+
+			&.has-icon:before {
+				font-size: 15px;
+			}
+
+			svg {
+				display: none;
+			}
+		}
+	}
+
+	.sidebar .widget_block h2 {
+		font-size: 2.4rem;
+		padding: 1rem 0;
+    }
+    
+    #blog-sidebar .widget > .widget-title .wt-area:before {
+        bottom: -1.7rem;
+    }
+}
+
+/** Woocommerce **/
+.button {
+	padding: side-values(1.3rem 2.7rem);
+	font-weight: 400;
+	@include button-variant(var(--alpha-dim-color, $dim-color), var(--alpha-dim-color-hover, #66645e)); // issue : duplicate
+}
+
+.sidebar .widget .alpha-product-prices li {
+    padding: 0;
+
+    > a,
+    &.empty span {
+        position: relative;
+        display: block;
+        padding: side-values(1rem 0 1rem 28px);
+
+        &:hover {
+            color: var(--alpha-primary-color, $primary-color);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            border: 1px solid;
+            border-radius: $corner-normal;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            #{$left}: 2px;
+            font-size: .7em;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            text-align: center;
+            line-height: 16px;
+
+            @include only-for-retina(1.5) {
+                text-indent: 0;
+            }
+        }
+    }
+}
+
+.sidebar .widget .alpha-block {
+	padding-top: 2rem;
+}
+
+// sidebar .widget .alpha-product-prices li {
+.sidebar nav.widget .wc-layered-nav-term,
+.sidebar nav.widget .with-checkbox li,
+.sidebar nav.widget .yith-wcan-list li,
+.sidebar nav.widget .alpha-product-prices li {
+	> a,
+    &.empty span {
+		padding: side-values(1rem 0 1rem 27px);
+
+		&:before {
+			#{$left}: 0;
+            color: #ccc;
+		}
+
+		&::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            #{$left}: 5px;
+        }
+	}
+}
+
+.sidebar nav.widget .wc-layered-nav-term.chosen > a,
+.sidebar nav.widget .with-checkbox li.chosen > a,
+.sidebar nav.widget .yith-wcan-list li.chosen > a,
+.sidebar nav.widget .alpha-product-prices li.chosen > a {
+    color: var(--alpha-primary-color, $primary-color);
+}
+
+.sidebar nav.widget .wc-layered-nav-term.chosen > a::before,
+.sidebar nav.widget .with-checkbox li.chosen > a::before,
+.sidebar nav.widget .yith-wcan-list li.chosen > a::before,
+.sidebar nav.widget .alpha-product-prices li.chosen > a::before {
+	content: "";
+    color: #ccc;
+	background-color: transparent;
+    border-radius: 0;
+    border-color: var(--alpha-primary-color, $primary-color);
+}
+
+.sidebar .widget .wc-layered-nav-term.chosen > a::after,
+.sidebar .widget .with-checkbox li.chosen > a::after,
+.sidebar .widget .yith-wcan-list li.chosen > a::after,
+.sidebar .widget .alpha-product-prices li.chosen > a::after {
+    width: 8px;
+    height: 8px;
+    background-color: var(--alpha-primary-color, $primary-color);
+}
+
+.sidebar .widget .wc-layered-nav-rating {
+	padding: 0.8rem 0;
+
+	a {
+		padding-#{$left}: 2px;
+    }
+
+    &.chosen a {
+        color: var(--alpha-primary-color, $primary-color);
+    }
+}
+
+.stars:hover:before {
+	color: var(--alpha-primary-color, $primary-color);
+}
+
+/** Wp **/
+@if use(wpcf7) {
+	form.wpcf7-form {
+		.wpcf7-form-control {
+            height: 51px;
+        }
+
+        input {
+            background: #fff;
+		}
+
+		textarea, textarea::placeholder, input, input::placeholder {
+            color: #999;
+        }
+	}
+
+	// Demo 1 Contact Form Style
+    div.wpcf-style1 {
+        .wpcf7-submit:hover {
+            cursor: pointer;
+            color: $primary-color;
+            transition: color .3s;
+        }
+        .wpcf7-form>p {
+            border-bottom: 1px solid #e0dede;
+        }
+        .form-text-control {
+            max-width: 220px;
+            min-height: 1px;
+            padding: 3px 10px !important;
+            background: transparent;
+            border-width: 0;
+            font-size: 12px;
+        }
+        .wpcf7-form-control {
+            height: auto;
+            padding: 5px 9px;
+        }
+    }
+    // Footer Dark Form Style
+    .footer-dark {
+        .form-text-control {
+            padding: 0 !important;
+        }
+        .wpcf-style1 .wpcf7-form>p {
+            border-color: #393939;
+        }
+        .wpcf7-form input, .wpcf7-form input::placeholder {
+            color: #54524d;
+            line-height: 26px;
+        }
+        .wpcf7-form button {
+            color: #999;
+        }
+        .wpcf7-form-control {
+            padding: 5px 0;
+        }
+    }
+}
+
+@if use_component(woocommerce) {
+    .woocommerce {
+        .form-row [type="text"],
+        .form-row [type="tel"],
+        .form-row [type="password"],
+        .form-row [type="email"],
+        .form-row textarea {
+            border-radius: 0;
+        }
+    }
+}
+
+// WP
+@if use_component(wp) {
+    div.dashicons-alpha-logo:before,
+    span.dashicons-alpha-logo:before,
+    .alpha-mini-logo:before {
+        padding: 2px;
+    }
+    #wp-admin-bar-alpha .custom-mini-logo img, 
+    #wp-admin-bar-alpha .dashicons-alpha-logo:before {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Elementor logos
+.elementor-studio-section-button .alpha-mini-logo:before {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12px;
+	filter: contrast(0) brightness(2);
+}

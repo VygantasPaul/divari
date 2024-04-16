@@ -1,0 +1,46 @@
+// Classic Type
+@if (use_component(category-type-classic2)) {
+    .cat-type-classic-2 {
+        &.product {
+            color: #fff;
+        }
+        mark {
+            display: block;
+            opacity: 0;
+            line-height: 0;
+            visibility: hidden;
+            transition: opacity .2s, line-height .2s, visibility .2s, padding .2s;
+        }
+        .woocommerce-loop-category__title {
+            margin-bottom: 0;
+            text-transform: uppercase;
+            transition: line-height .2s;
+        }
+        .category-content {
+            bottom: 2rem;
+            padding: 1.3rem 3rem;
+            min-height: 0;
+            width: auto;
+            height: auto;
+            background-color: rgba( 38, 38, 38, .8 );
+            border-radius: corner-values(0 5rem 5rem 0);
+            &:hover {
+                background-color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+        &.active,
+        &:hover {
+            .woocommerce-loop-category__title {
+                line-height: 1.2;
+            }
+            mark {
+                line-height: 1.3;
+                visibility: visible;
+                opacity: 1;
+            }
+            .category-content {
+                background: var(--alpha-primary-color-alpha, rgba(red($primary-color), green($primary-color), blue($primary-color), .8));
+            }
+        }
+    }
+}

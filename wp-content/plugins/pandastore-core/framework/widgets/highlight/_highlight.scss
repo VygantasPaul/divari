@@ -1,0 +1,22 @@
+/* -------------------------------------------
+    Highlight
+---------------------------------------------- */
+
+@if use_component( highlight ) {
+    .highlight {
+        background-size: 0% 30%;
+        background-repeat: no-repeat;
+        transition: background-size 1.5s, color 1.5s;
+        background-position: left bottom;
+        &.animating {
+            background-size: 100% 30%;
+        }
+        &.animated-done {
+            transition: background-size .2s;
+        }
+    }
+    .highlight-text span.highlight:hover {
+        background-size: 100% 100%;
+        transition: background-size .2s, color .2s;
+    }
+}

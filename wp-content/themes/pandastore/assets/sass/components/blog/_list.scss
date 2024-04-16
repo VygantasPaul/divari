@@ -1,0 +1,55 @@
+// List Type
+.post-list {
+    .post-media img {
+        object-fit: cover;
+        height: 100%;
+        min-height: 100%;
+    }
+    .post-details {
+        padding: 0.6rem 0 0;
+	}
+    .post-media {
+        display: flex;
+        align-self: stretch;
+        > a {
+            width: 100%;
+        }
+	}
+
+	.post-title {
+		margin-bottom: 1.4rem;
+	}
+
+	.post-meta {
+		margin-bottom: 1.7rem;
+	}
+
+	.btn-link {
+		font-weight: 300;
+
+		i {
+			font-size: 18px;
+			margin-bottom: 3px;
+		}
+	}
+}
+@include mq(sm) {
+    .post-list {
+        display: flex;
+        align-items: center;
+        .post-media {
+            width: calc(50%);
+            max-width: 400px;
+        }
+        .post-details {
+			width: calc(50% - 3rem);
+            flex: 1;
+        }
+    }
+}
+
+@include mq(xl) {
+	.post-list .post-details {
+		margin-#{$left}: 1rem;
+	}
+}

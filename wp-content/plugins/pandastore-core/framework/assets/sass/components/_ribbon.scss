@@ -1,0 +1,257 @@
+@if use_component('ribbon') {
+    .ribbon-added-widget .elementor-widget-container {
+        position: relative;
+    }
+    .ribbon-overflow-hidden .elementor-widget-container {
+        overflow: hidden;
+    }
+    .ribbon {
+        position: absolute;
+        display: block;
+        text-align: center;
+    }
+    .ribbon-text {
+        display: block;
+        font-size: 1.2rem;
+        color: #fff;
+        line-height: 1;
+        letter-spacing: -.025em;
+        text-transform: uppercase;
+    }
+    .ribbon-icon {
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    // Ribbon Position
+    .ribbon-top-left {
+        top: 0;
+        left: 0;
+    }
+    .ribbon-top-right {
+        top: 0;
+        right: 0;
+    }
+    .ribbon-bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+    .ribbon-bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+
+    // Ribbon Type 1
+    .ribbon-type-1 {
+        background-color: #ff835d;
+        padding: 1rem 1.5rem;
+
+        &.ribbon-top-left {
+            top: 2rem;
+            left: -3px;
+        }
+        &.ribbon-top-right {
+            top: 2rem;
+            right: -3px;
+        }
+        &.ribbon-bottom-right {
+            bottom: 2rem;
+            right: -3px;
+        }
+        &.ribbon-bottom-left {
+            bottom: 2rem;
+            left: -3px;
+        }
+    }
+
+    // Ribbon Type 2
+    .ribbon-type-2 {
+        background-color: #62a8ea;
+        padding: 1rem 1.5rem;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 7px;
+            width: 7px;
+            bottom: -6px;
+            background: inherit;
+            filter: brightness(.7);
+            clip-path: path('M0,0 L 7,7 V 0 Z');
+        }
+
+        &.ribbon-top-left {
+            top: 2rem;
+            left: -7px;
+        }
+        &.ribbon-bottom-left {
+            bottom: 2rem;
+            left: -7px;
+        }
+        &.ribbon-top-left,
+        &.ribbon-bottom-left {
+            &:after {
+                left: 0;
+            }
+        }
+
+        &.ribbon-top-right {
+            top: 2rem;
+            right: -7px;
+        }
+        &.ribbon-bottom-right {
+            bottom: 2rem;
+            right: -7px;
+        }
+        &.ribbon-top-right,
+        &.ribbon-bottom-right {
+            &:after {
+                right: 0;
+                clip-path: path('M0,0 V 7 L 7,0 Z');
+            }
+        }
+    }
+
+    // Ribbon Type 3
+    .ribbon-type-3 {
+        background-color: #46be8a;
+        padding: 2.2rem 1rem;
+
+        &.ribbon-top-left {
+            left: 3rem;
+        }
+        &.ribbon-top-right {
+            right: 3rem;
+        }
+        &.ribbon-bottom-left {
+            bottom: 0;
+            left: 3rem;
+        }
+        &.ribbon-bottom-right {
+            bottom: 0;
+            right: 3rem;
+        }
+    }
+
+    // Ribbon Type 4
+    .ribbon-type-4 {
+        width: 1em;
+        height: 1em;
+        background-color: #5449ff;
+        transform: rotateZ(45deg);
+        font-size: 10rem;
+
+        .ribbon-icon {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            &:before {
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.ribbon-top-left {
+            top: -.5em;
+            left: -.5em;
+            .ribbon-icon:before {
+                top: 50%;
+                left: 80%;
+            }
+        }
+        &.ribbon-top-right {
+            top: -.5em;
+            right: -.5em;
+            .ribbon-icon:before {
+                top: 80%;
+                left: 50%;
+            }
+        }
+        &.ribbon-bottom-left {
+            bottom: -.5em;
+            left: -.5em;
+            .ribbon-icon:before {
+                top: 20%;
+                left: 50%;
+            }
+        }
+        &.ribbon-bottom-right {
+            bottom: -.5em;
+            right: -.5em;
+            .ribbon-icon:before {
+                top: 50%;
+                left: 20%;
+            }
+        }
+    }
+
+    // Ribbon Type 5
+    .ribbon-type-5 {
+        position: absolute;
+        display: block;
+        text-align: center;
+        padding: .9rem 1.5rem;
+        background-color: #5449ff;
+        min-width: 20rem;
+
+        &.ribbon-top-left {
+            top: 0;
+            left: 0;
+            transform: translate(calc(-50% + 2.5rem), calc(-50% + 2.5rem)) rotateZ(-45deg);
+        }
+        &.ribbon-top-right {
+            top: 0;
+            right: 0;
+            transform: translate(calc(50% - 2.5rem), calc(-50% + 2.5rem)) rotateZ(45deg);
+        }
+        &.ribbon-bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: translate(calc(-50% + 2.5rem), calc(50% - 2.5rem)) rotateZ(45deg);
+        }
+        &.ribbon-bottom-right {
+            bottom: 0;
+            right: 0;
+            transform: translate(calc(50% - 2.5rem), calc(50% - 2.5rem)) rotateZ(-45deg);
+        }
+    }
+
+    //Ribbon Type 6
+    .ribbon-type-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        background: #57c7d4;
+        border-radius: 50%;
+
+        .ribbon-text {
+            padding: 0 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &.ribbon-top-left {
+            top: 1.4rem;
+            left: 1.7rem;
+        }
+
+        &.ribbon-top-right {
+            top: 1.4rem;
+            right: 1.7rem;
+        }
+
+        &.ribbon-bottom-left {
+            bottom: 1.4rem;
+            left: 1.7rem;
+        }
+
+        &.ribbon-bottom-right {
+            bottom: 1.4rem;
+            right: 1.7rem;
+        }
+    }
+
+}

@@ -1,0 +1,92 @@
+// Group 2 Type
+@if use_component(category-type-group2) {
+    .cat-type-group2 {
+        display: flex;
+        align-items: center;
+        > * {
+            flex: 1;
+        }
+    }
+    .cat-type-group2 {
+        color: #fff;
+        background-color: var(--alpha-primary-color, $primary-color);
+        overflow: hidden;
+        figure {
+            i {
+                display: inline-block;
+                font-size: 4.8rem;
+                transition: transform .3s;
+                color: #fff;
+            }
+        }
+        img { margin-bottom: 1.5rem; }
+         
+        > a {
+            padding-#{$right}: 1rem;
+            &:hover i {
+                transform: translateY(-.5rem);
+                // animation-iteration-count: infinite;
+            }
+        }
+    
+        .category-content {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            background: transparent;
+            text-align: left;
+            align-items: if-ltr(flex-start, flex-end);
+        }
+        
+        .woocommerce-loop-category__title {
+            margin-bottom: 0;
+            text-align: center;
+            color: #fff;
+        }
+        .category-list {
+            font-size: 1.3rem;
+            line-height: 1.2;
+            text-align: $left;
+    
+            li {
+                white-space: nowrap;
+                &:#{$before} {
+                    content: if-ltr('\f105', '\f104');
+                    padding-#{$right}: .8rem;
+                    font-family: 'Font Awesome 5 Free';
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #999;
+                }
+                &:not(:last-child) {
+                    margin-bottom: .5rem;
+                }
+            }
+            a {
+                position: relative;
+                display: inline-block;
+                transition: text-decoration .3s;
+                &:hover {
+                    color: inherit;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &.active,
+        &:hover {
+            .woocommerce-loop-category__title {
+                margin-bottom: 0;
+            }
+            .category-content {
+                background: transparent;
+            }
+        } 
+    }
+    .creative-grid {
+        .cat-type-group2 {
+            > a,
+            figure {
+                height: auto;
+            }
+        }
+    }
+}

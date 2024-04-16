@@ -1,0 +1,118 @@
+/* -------------------------------------------
+	Image Box
+---------------------------------------------- */
+
+.elementor .elementor-element.elementor-widget-#{$theme-name}_widget_imagebox .elementor-widget-container .image-box figure {
+    margin-bottom: 0;
+}
+.image-box {
+
+    figure, img {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.4rem;
+        line-height: 1.3;
+        text-transform: capitalize;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+    
+    // Border type
+    &.border {
+        figure {
+            display: block;
+        }
+        .image-box-content {
+            padding: 3rem 2rem;
+            border-width: 0 1px 1px 1px;
+            border-style: solid;
+            border-color: $border-color-light;
+        }
+    }
+    
+    // Round type
+    &.round {
+        text-align: center;
+        img {
+            margin: 0 auto 2rem;
+            max-width: 261px;
+            min-height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    // Inner type
+    &.inner {
+        .content {
+            margin-top: 0;
+            color: #fff;
+            opacity: .4;
+        }
+        .overlay {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background: rgba(51,51,51,.8);
+        }
+    }
+    
+    // Aside type
+    &.aside {
+        display: flex;
+        align-items: center;
+        .image-box-content {
+            padding: side-values(0 .5rem 0 2.5rem);
+        }
+        figure, img {
+            width: 130px;
+            height: 130px;
+            min-width: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .content {
+            margin-top: 0.5rem;
+        }
+    }
+
+    // Outer type
+    &.outer .content {
+        margin-top: 0;
+    }
+    
+    // Boxed type
+    &.boxed {
+        figure {
+            display: block;
+        }
+        .image-box-content {
+            padding: 3.2rem 2rem;
+            margin: 0 auto;
+            width: 90%;
+            transform: translateY(-25%);
+            background: #fff;
+            box-shadow: 0 5px 25px rgba(0,0,0,.1);
+        }
+    }
+}
+@include mq( sm,  max ) {
+    .image-box {
+        // Aside type
+        &.aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .image-box-content {
+                margin-top: 2rem;
+                padding: 0;
+            }
+        }
+    }
+}

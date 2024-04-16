@@ -1,0 +1,36 @@
+// Icon Type
+// Inline
+@if use_component(category-type-icon) {
+    .cat-type-icon {
+        color: var(--alpha-dark-color, $dark-color);
+        text-align: center;
+
+        > a {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: side-values(0 auto 2.5rem auto);
+        }
+
+        i {
+            font-size: 5rem;
+            margin: 0;
+            transition: color .3s;
+        }
+
+        .woocommerce-loop-category__title {
+            margin: 0;
+            color: var(--alpha-dark-color, $dark-color);
+        }
+        &.active,
+        &:hover {
+                a > i {
+                    color: var(--alpha-primary-color, $primary-color);
+                }
+            }
+        .active + .category-content .woocommerce-loop-category__title a {
+            color: var(--alpha-primary-color, $primary-color);
+        }
+    }
+}

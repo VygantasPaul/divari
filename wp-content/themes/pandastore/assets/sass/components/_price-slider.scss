@@ -1,0 +1,75 @@
+/* -------------------------------------------
+	No UiSlider
+---------------------------------------------- */
+
+@if use(price-slider) {
+	
+	.widget_price_filter form {
+		position: relative;
+	}
+
+	.price_slider_wrapper {
+		width: 100%;
+	}
+
+	.price_slider_amount {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1.9rem;
+		padding-bottom: 2rem;
+
+		.clear, input {
+			display: none;
+		}
+	}
+
+	.price_label { 
+		color: var(--alpha-dim-color, $dim-color);
+	}
+
+	.ui-slider-horizontal {
+		height: 23px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 10px;
+			bottom: 11px;
+			background: $border-color-light;
+		}
+		.ui-slider-range {
+			top: 10px;
+			height: 2px;
+		}
+	}
+	.ui-slider {
+		position: relative;
+		margin: 0 .7rem;
+
+		.ui-slider-range {
+			display: block;
+			position: absolute;
+			z-index: 1;
+			font-size: .7em;
+			border: 0;
+			border-radius: 1em;
+			background: var(--alpha-primary-color, $primary-color);
+		}
+		.ui-slider-handle {
+			position: absolute;
+			z-index: 2;
+			width: 1.4rem;
+			height: 1.4rem;
+			background: #fff;
+			border: 1px solid var(--alpha-primary-color, $primary-color);
+			border-radius: 50%;
+			cursor: pointer;
+			outline: 0;
+			top: 4px;
+			margin-#{$left}: -.7rem;
+		}
+	}
+}

@@ -1,0 +1,152 @@
+/* -------------------------------------------
+    Accordion
+---------------------------------------------- */
+
+// Default
+@if use_component(accordion) {
+	.accordion {
+		// overflow: hidden;
+		.collapsed,
+		.expanding {
+			display: none;
+		}
+		.card {
+			.card-body {
+				padding: 0 0 3.2rem 0;
+			}
+		}
+	}
+	.card {
+		border-bottom: 1px solid $border-color-light;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.card-header {
+		font-size: 2rem;
+		font-weight: 300;
+		line-height: 1;
+		color: var(--alpha-dark-color, $dark-color);
+		
+		a {
+			display: flex;
+			align-items: center;
+			position: relative;
+			padding: 2.2rem 0;
+			transition: color .3s, background-color .3s, border-color .3s;
+
+			.title {
+				margin-#{$right}: 2rem;
+			}
+		}
+
+		.toggle-icon {
+			font-size: 1.4rem;
+		}
+	}
+			
+	.card-header .opened,
+	.card-header .closed {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		#{$right}: 0;
+	}
+	.collapse .closed,
+	.expand .opened { 
+		display: none; 
+	}
+	.card-body > .elementor-background-overlay {
+		display: none;
+	}
+}
+
+// Simple
+@if use(accordion-simple) {
+	.accordion-simple {
+		.card {
+			border-top: 1px solid $border-color-light;
+			border-bottom: 0;
+			.card-body {
+				padding: side-values(0 3rem 2.3rem 4.5rem);
+			}
+		}
+		.card-header a {
+			padding: 2.3rem 2.5rem;
+		}
+		.opened,
+		.closed { 
+			#{$right}: 2.5rem; 
+		}
+		.card-body {
+			> div {
+				position: relative;
+
+				&:before {
+					content: '';
+					position: absolute;
+					#{$left}: -2rem;
+					width: 2px;
+					height: 100%;
+					background: #464644;
+				}
+			}
+		}
+	}
+}
+
+// Boxed Style
+@if use(accordion-boxed) {
+	.accordion-boxed {
+		.card-header a,
+		.card-body {
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+
+		.card-header {
+			.opened,
+			.closed { 
+				#{$right}: 2.5rem; 
+			}
+		}
+	}
+}
+
+// Border Style
+@if use(accordion-border) {
+	.accordion-border {
+		.card {
+			border: solid $border-color-light;
+			border-width: 1px 1px 0;
+			&:last-child {
+				border-bottom: 1px solid $border-color-light;
+			}
+			.card-body {
+				padding: 0 2.5rem 2rem 2.5rem;
+			}
+		}
+	}
+}
+
+// Boxed 2 - Card Border & Gutter
+@if use(accordion-boxed2) {
+	.accordion-boxed2 {
+		.card {
+			border: 0;
+			background: #fff;
+			box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .05);
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			.card-body {
+				padding: 0 2.5rem 2rem 2.5rem;
+			}
+		}
+	}
+}
+.accordion-gutter-sm .card:not(:last-child) {
+    margin-bottom: 2px;
+}

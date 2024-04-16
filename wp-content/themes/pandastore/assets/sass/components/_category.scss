@@ -1,0 +1,119 @@
+/* -------------------------------------------
+    Categories
+        Base
+        - Classic Type
+        - Icon Type
+        - Ellipse Type
+        - Banner Type
+        - Simple Type
+        - Overlay Category
+---------------------------------------------- */
+
+// Base
+.product-category {
+    position: relative;
+    figure {
+        max-width: 100%;
+        text-align: center;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    mark {
+        color: inherit;
+        background: transparent;
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+    .btn {
+        color: inherit;
+    }
+    i {
+        display: inline-block;
+        font-size: 4.2rem;
+        color: var(--alpha-body-color, $body-color);
+        margin-bottom: 1.5rem;
+        transition: transform .3s;
+    }
+    // (new)
+    &.content-left .category-content {
+        align-items: if-ltr(flex-start, flex-end);
+        text-align: left;
+    }
+    &.content-center .category-content {
+        align-items: center;
+        text-align: center;
+    }
+    &.content-right .category-content {
+        align-items: if-ltr(flex-end, flex-start);
+        text-align: right;
+    }
+    //
+}
+.woocommerce-loop-category__title {
+    margin-bottom: .2rem;
+    font: {
+        size: 1.6rem;
+        weight: 400;
+    }
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: inherit;
+    a {
+        color: inherit;
+    }
+}
+.category-wrap {
+    margin-bottom: 2rem;
+}
+.category-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: background .3s;
+}
+.cat-type-absolute {
+    .category-content {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        #{$left}: 0;
+        width: auto;
+        min-height: 70px;
+    }
+}
+
+// @start feature: fs_pct_banner
+@import 'category/banner';
+// @end feature: fs_pct_banner
+
+// @start feature: fs_pct_simple
+@import 'category/simple';
+// @end feature: fs_pct_simple
+
+// @start feature: fs_pct_classic
+@import 'category/classic';
+// @end feature: fs_pct_classic
+
+// @start feature: fs_pct_ellipse-2
+@import 'category/ellipse2';
+// @end feature: fs_pct_ellipse-2
+
+// @start feature: fs_pct_icon
+@import 'category/icon';
+// @end feature: fs_pct_icon
+
+.filter-categories .active {
+    color: var(--alpha-primary-color, $primary-color);
+}
+// In Creative Grid
+.grid-item {
+    > .product-category {
+        height: 100%;
+    }
+}

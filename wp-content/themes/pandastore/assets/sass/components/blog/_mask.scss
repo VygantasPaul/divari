@@ -1,0 +1,79 @@
+// Mask Type
+.post-mask {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%, #000 100%);
+        opacity: .75;
+        transition: all 0.3s;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .post-details {
+        position: absolute;
+        padding: 0;
+        left: 3rem;
+        right: 3rem; 
+        bottom: 2.4rem;
+        z-index: 2;
+
+        a {
+            color: #fff;
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+    .post-calendar {
+        z-index: 3;
+    }
+    .post-title {
+        white-space: normal;
+        color: #fff;
+    }
+
+    &:hover {
+        .post-media a::before { opacity: .1; }
+    }
+
+    .post-author,
+    .post-meta,
+    .post-cats,
+    .post-author + *:before  {
+        color: #ebebeb;
+    }
+    mark,
+    .comments-link:hover mark {
+        color: #fff;
+    }
+    .post-details {
+        transform: translateY(100%);
+        will-change: transform;
+        transition: transform .3s;
+    }
+    .post-meta-visible {
+        position: absolute;
+        bottom: 100%;
+    }
+    .post-meta {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    &:hover {
+        .post-details {
+            transform: translateY(0);
+        }
+        .post-meta:last-child {
+            opacity: 1;
+        }
+    }
+}

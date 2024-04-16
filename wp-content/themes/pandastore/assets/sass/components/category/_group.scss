@@ -1,0 +1,77 @@
+// Group Type
+@if use_component(category-type-group) {
+    .cat-type-group {
+        display: flex;
+        align-items: center;
+        > * {
+            flex: 1;
+        }
+    }
+    .cat-type-group {
+        color: var(--alpha-body-color, $body-color);
+        border: 1px solid $border-color-light;
+        padding: 1rem;
+
+        .category-content {
+            position: static;
+            padding: side-values(1rem 0 1rem 3rem);
+            background: transparent;
+            text-align: left;
+            align-items: if-ltr(flex-start, flex-end);
+            order: -1;
+        }
+        
+        .woocommerce-loop-category__title {
+            margin-bottom: 1.5rem;
+            text-transform: none;
+            font: {
+                size: 1.6rem;
+                weight: 400;
+            }
+            color: var(--alpha-dark-color, $dark-color);
+        }
+        .category-list {
+            font-size: 1.3rem;
+            line-height: 1.45;
+            margin-#{$left}: -.3rem;
+
+            li:not(:last-child) {
+                margin-bottom: .5rem;
+            }
+            a {
+                position: relative;
+                display: inline-block;
+                transition: none;
+                &:hover {
+                    color: var(--alpha-primary-color, $primary-color);
+
+                    &:before {
+                        color: inherit;
+                    }
+                }
+
+                &:#{$before} {
+                    content: if-ltr('\e913', '\e912');
+                    font-family: $theme-font;
+                    position: relative;
+                    top: 1px;
+                    margin-#{$right}: .3rem;
+                    color: var(--alpha-dark-color, $dark-color);
+                }
+            }
+        }
+        &:hover {
+            .woocommerce-loop-category__title {
+                margin-bottom: 1.5rem;
+            }
+            .category-content {
+                background: transparent;
+            }
+        } 
+    }
+    @include mq(md, 'max') {
+        .cat-type-group .category-content {
+            padding: side-values(1rem 0 1rem 1.5rem);
+        }
+    }
+}

@@ -1,0 +1,184 @@
+// Comments
+.comments {
+	position: relative;
+	margin-bottom: 2rem;
+	padding-top: 3.8rem;
+
+	.title {
+		font-size: 2.4rem;
+		line-height: 1.2;
+		color: var(--alpha-dark-color, $dark-color);
+		text-transform: capitalize;
+	}
+
+	.main-content-wrap + & {
+		margin-top: 2rem;
+	}
+}
+.comment-text {
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+#respond #cancel-comment-reply-link {
+	float: $right;
+}
+.commentlist {
+	.children {
+        padding-top: 3.2rem;
+        margin-#{$left}: 10rem;
+	}
+	li.comment {
+		margin-bottom: 4rem;
+
+		&:last-child {
+			border-bottom-width: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+@include mq( md, max ) {
+	.commentlist .children {
+		margin-#{$left}: 1rem;
+	}
+}
+
+div.comment,
+.comment_container {
+	display: flex;
+}
+
+.comment-reply-link {
+	color: var(--alpha-body-color, $body-color);
+	font-weight: 400;
+
+	&:#{$after} {
+		content: if-ltr('\e92c', '\e92b');
+		font-family: $theme-font;
+		margin-#{$left}: .7rem;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--alpha-primary-color, $primary-color);
+		box-shadow: 0 1px 0 var(--alpha-primary-color, $primary-color);
+	}
+}
+
+.comment-avatar {
+	max-width: 10rem;
+	flex: 0 0 10rem;
+	margin-#{$right}: 2rem;
+
+	img {
+		width: 100%;
+		height: 10rem;
+		object-fit: cover;
+		background-color: #ebebeb;
+	}
+}
+
+.comment-name {
+	margin-#{$right}: .5rem;
+	margin-bottom: .9rem;
+	width: calc(100% - 8rem);
+	font-size: 1.6rem;
+	line-height: 1;
+
+	a {
+		color: var(--alpha-dim-color, $dim-color);
+	}
+}
+
+.comment-date {
+	margin-bottom: 2.2rem;
+	color: var(--alpha-body-color, $body-color);
+	font-weight: 300;
+	line-height: 1;
+}
+
+.comment-text {
+	flex: 1;
+	max-width: calc(100% - 12rem);
+	position: relative;
+	padding-top: 9px;
+}
+
+.comment-action {
+	position: absolute;
+	top: 0;
+	#{$right}: 0;
+
+	a {
+		text-transform: uppercase;
+	}
+}
+
+.comment-respond {
+	margin-bottom: 5rem;
+
+	.comment-reply-title {
+		margin-bottom: .5rem;
+		font-size: 2.6rem;
+		font-weight: 300;
+		line-height: 1.1;
+	}
+
+	.form-control,
+	textarea {
+		font-size: 1.3rem;
+		margin-bottom: 2rem;
+		max-width: 100%;
+		color: #999;
+		border-color: #ebebeb;
+		background: #fff;
+	}
+
+	label {
+		display: block;
+		color: var(--alpha-dim-color, $dim-color);
+		margin-bottom: 1rem;
+	}
+
+	.form-submit {
+		margin-bottom: 0;
+	}
+	.btn-submit {
+		padding: 1.9rem 4rem 1.6rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.comment-form-rating {
+		label {
+			font-size: 1.4rem;
+		}
+
+		.stars {
+			margin-bottom: .3rem;
+		}
+	}
+}
+
+@include mq(md, max) {
+	.comment-avatar {
+		max-width: 5rem;
+		flex: 0 0 5rem;
+		margin-#{$right}: 1rem;
+
+		img {
+			height: 5rem;
+		}
+	}
+	.comment-text {
+		max-width: calc(100% - 6rem);
+	}
+}
+
+@include mq(sm, max) {
+	.comment-action span {
+		display: none;
+	}
+}

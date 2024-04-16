@@ -1,0 +1,29 @@
+// Default Type
+@if use_component(category-type-default) {
+    .cat-type-default {
+        overflow: hidden;
+        .category-content {
+            padding: 1.8rem 0;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background: #fff;
+            color: var(--alpha-dark-color, $dark-color);
+        }
+        .woocommerce-loop-category__title {
+            margin-bottom: 0;
+        }
+        &.active,
+        &:hover {
+            .category-content {
+                background: var(--alpha-primary-color, $primary-color);
+                color: #fff;
+            }
+        }
+
+        mark {
+            margin-bottom: .5rem;
+            transition: color .3s;
+        }
+    }
+}

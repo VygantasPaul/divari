@@ -1,0 +1,181 @@
+/* -------------------------------------------
+   Titles
+        - Default
+        - Simple
+        - Line
+        - Underline
+        - Icon
+        - Link
+---------------------------------------------- */
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    .link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--alpha-dark-color, $dark-color);
+        &:hover {
+            color: var(--alpha-primary-color, $primary-color);
+        }
+    }
+    .divider {
+        margin: 0 1.5rem;
+    }
+}
+.title {
+    margin-bottom: 0;
+	max-width: 100%;
+	font-weight: 300;
+
+    &::before,
+    &::after {
+        height: 1px;
+        background: #edeef0;
+    }
+}
+.title-left .title {
+    margin-#{$right}: auto;
+}
+.title-right .title {
+    margin-#{$left}: auto;
+    text-align: right;
+}
+.title-center .title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.rtl .title-left .#{$theme-icon-prefix}-icon-long-arrow-right:before {
+    content: "\e92b";
+}
+.link-left {
+    .title { margin-left: 0; margin-right: 0; }
+    &.title-left { justify-content: if-ltr(flex-start, flex-end); text-align: left; }
+    &.title-center { justify-content: center; }
+    &.title-right { justify-content: if-ltr(flex-end, flex-start); text-align: right; }
+}
+// Title Cross
+.title-cross {
+    .title {
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex: 1;
+        &::before {
+            margin-#{$right}: 3rem;
+        }
+        &::after {
+            margin-#{$left}: 3rem;
+        }
+        &::before,
+        &::after {
+            flex: 1;
+            content: '';
+        }
+    }
+    &.title-left .title::before,
+    &.title-right .title::after { content: none }
+}
+
+// Underline
+@if use(title-underline) {
+    .title-underline {
+        position: relative;
+        text-align: $left;
+        &:after {
+            content: '';
+            margin: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            height: 1px;
+            background: #edeef0;
+        }
+        .title {
+            display: inline-block;
+            flex: 0 0 auto;
+            position: relative;
+            z-index: 2;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                bottom: 0;
+                background: var(--alpha-primary-color, $primary-color);
+            }
+        }
+    }
+}
+// Extra Fixed Titles
+.title-underline2 {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color-light;
+    .title {
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .btn-link {
+        padding: .5rem 0;
+        text-transform: capitalize;
+    }
+}
+.title-underline3 {
+	position: relative;
+	display: inline-block !important;
+	width: auto;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 98%;
+		height: 13px;
+		background-color: var(--alpha-primary-color, $primary-color);
+		opacity: 0.3;
+        border-bottom: 0;
+        z-index: -1;
+	}
+}
+.title-underline4 {
+    &:after {
+		content: '';
+        display: block;
+        margin-top: 1.3rem;
+		width: 6rem;
+		height: 1px;
+		background-color: var(--alpha-primary-color, $primary-color);
+    }
+}
+.title-underline-center::after,
+.title-underline-center::before {
+    margin: auto;
+}
+.title-underline-end::after,
+.title-underline-end::before {
+    margin-#{$left}: auto;
+}
+.title-underline-md::after,
+.title-underline-md::before {
+    width: 8rem;
+}
+.title-underline-thick::after,
+.title-underline-thick::before {
+    height: 2px;
+}
+.title-underline-secondary::after,
+.title-underline-secondary::before {
+    background-color: var(--alpha-secondary-color, $secondary-color);
+}
+@include mq(sm, max) {
+    .title-wrapper {
+        flex-wrap: wrap;
+    }
+}

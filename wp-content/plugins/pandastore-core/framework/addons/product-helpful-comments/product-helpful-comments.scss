@@ -1,0 +1,46 @@
+/**
+ * 360 Degree Gallery
+ *
+ * @package Alpha FrameWork
+ * @since 1.0
+ */
+
+@import '../../../assets/sass/config';
+@import '../../assets/sass/mixins/mixins';
+@import '../../assets/sass/mixins/direction';
+
+.woocommerce-Reviews {
+    .select-box {
+        display: inline-flex;
+        align-items: center;
+
+        select:not(:last-child) {
+            margin-#{$right}: 1rem;
+        }
+    }
+
+    .sticky-wrapper {
+        position: sticky;
+        top: 5rem;
+    }
+}
+
+@include mq('md') {
+    .woocommerce-Reviews {
+        .title-wrapper .select-box {
+            margin-#{$left}: auto;
+        }
+        .select-wrapper {
+            text-align: right;
+        }
+    }
+
+    .tab-section .woocommerce-Reviews .review {
+        border-top: none;
+        border-bottom: 1px solid $border-color-light;
+    
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+}

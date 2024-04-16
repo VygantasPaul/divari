@@ -1,0 +1,30 @@
+<wpml-config>
+    <admin-texts>
+        <key name="panda_settings">
+            <key name="ptb_delimiter" />
+            <key name="mobile_bar_menu_label" />
+            <key name="mobile_bar_home_label" />
+            <key name="mobile_bar_shop_label" />
+            <key name="mobile_bar_wishlist_label" />
+            <key name="mobile_bar_account_label" />
+            <key name="mobile_bar_cart_label" />
+            <key name="mobile_bar_search_label" />
+            <key name="mobile_bar_top_label" />
+            <key name="products_load_label" />
+            <key name="product_description_title" />
+            <key name="product_specification_title" />
+            <key name="product_reviews_title" />
+            <key name="product_tab_title" />
+            <key name="product_related_title" />
+            <key name="product_upsells_title" />
+            <key name="white_label_title" />
+            <key name="cookie_text" />
+            <key name="cookie_agree_btn" />
+            <key name="cookie_decline_btn" />
+        </key>
+    </admin-texts>
+    <custom-fields>
+        <custom-field action="translate">page_title</custom-field>
+        <custom-field action="translate">page_subtitle</custom-field>
+    </custom-fields>
+</wpml-config>

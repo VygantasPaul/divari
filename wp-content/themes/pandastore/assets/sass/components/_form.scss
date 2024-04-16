@@ -1,0 +1,361 @@
+/* -------------------------------------------
+    Form
+---------------------------------------------- */
+
+.form .form-control {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1.5rem 2rem;
+    border: 1px solid $border-color-light;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: var(--alpha-body-color, $body-color);
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    &::placeholder {
+        opacity: 1;
+        transition: color .3s;
+    }
+    &::-webkit-input-placeholder {
+        transition: color .3s;
+    }
+    &::-moz-placeholder {
+        transition: color .3s;
+    }
+    &:-ms-input-placeholder {
+        transition: color .3s;
+    }
+    &:focus::placeholder {
+        color: transparent;
+    }
+    &:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    &:focus::-moz-placeholder {
+        color: transparent;
+    }
+    &:focus::-ms-input-placeholder {
+        color: transparent;
+    }
+    &.form-solid {
+        background-color: #fff;
+        border: 0;
+        color: #8d8d8d;
+    }
+}
+
+textarea {
+    font-family: inherit;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.form-textarea-control {
+    max-height: 19rem;
+}
+
+.custom-input {
+    // CheckBox
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+	    -webkit-appearance: none;
+
+        + label, +span {
+            position: relative;
+            padding-#{$left}: 2.6rem;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                #{$left}: 0;
+                width: 18px;
+                height: 18px;
+                line-height: 16px;
+                border: 1px solid var(--alpha-light-color, $light-color);
+
+                @include only-for-ie() {
+                    line-height: 14px;
+                }
+            }
+        }
+        &:checked + label::before,
+        &:checked + span::before {
+            content: '\f00c';
+            border-color: var(--alpha-dark-color, $dark-color);
+            background: var(--alpha-dark-color, $dark-color);
+            color: #fff;
+            font-size: 9px;
+            font-weight: 600;
+            font-family: 'Font Awesome 5 Free';
+            text-align: center;
+        }
+    }
+    // Radio
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+	    -webkit-appearance: none;
+        z-index: -1;
+
+        + label {
+            position: relative;
+            padding-#{$left}: 2.5rem;
+            display: block;
+            cursor: pointer;
+            &::before {
+                content: "";
+                position: absolute;
+                border: 1px solid #ccc;
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                color: #999;
+                font-size: 0.7em;
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                text-align: center;
+                line-height: 16px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 5px;
+            }
+        }
+        &:checked ~ label::before {
+            border-color: var(--alpha-primary-color, $primary-color);
+        }
+        &:checked ~ label::after {
+            width: 8px;
+            height: 8px;
+            background-color: var(--alpha-primary-color, $primary-color);
+        }
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    color-adjust: exact; // Keep themed appearance for print
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid var(--alpha-light-color, $light-color);
+    transition: background-color .35s, border-color .35s;
+    cursor: pointer;
+    ~ label, ~ span {
+        cursor: pointer;
+    }
+}
+input[type="checkbox"] {
+    &:checked {
+        background-color: var(--alpha-dark-color, $dark-color);
+        border-color: var(--alpha-dark-color, $dark-color);
+        color: #fff;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    }
+}
+input[type="radio"] {
+    border-radius: 50%;
+    &:checked {
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%2333'/%3e%3c/svg%3e")
+    }
+}
+
+// Select Box
+select { // updated (925)
+    width: 100%;
+    height: 40px;
+    min-height: auto;
+    border: 1px solid #d7d7d7;
+    background: #fff url(../images/select-bg.svg) if-ltr(calc(100% - 13.5px), 13.5px) 45%/26px 60px no-repeat !important;
+    cursor: pointer;
+    padding: 0 1.5rem;
+    max-width: 28rem;
+    margin: 0;
+    font-weight: 300;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.select-box {
+    position: relative;
+}
+
+.select-box select {
+    position: relative;
+    max-width: 14rem;
+    min-width: 8.6rem;
+    min-height: auto;
+    width: auto;
+    height: 100%;
+    padding: side-values(8px 35px 8px 20px);
+    border: 1px solid $border-color-light;
+    color: inherit;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-family: inherit;
+    letter-spacing: inherit;
+    text-transform: capitalize;
+    z-index: 1;
+    -moz-appearance: none;
+	-webkit-appearance: none;
+
+	option {
+		font-weight: 300;
+	}
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@include only-for-ie() {
+    select::-ms-expand { display: none }
+    select:focus::-ms-value { background: transparent; color: currentColor }
+}
+
+// Quantity
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.quantity {
+    position: relative;
+    display: inline-block;
+    height: 4rem;
+    width: 11.6rem;
+    // max-width: 100%;
+
+    .qty {
+        -moz-appearance: textfield;
+        width: 100%;
+        padding: 0 2rem;
+        @if ( get(form, input-group, border-color) ) {
+            border: solid get(form, input-group, border-color);
+            border-width: 1px;
+        }
+        color: var(--alpha-dim-color, $dim-color);
+        font-size: 1.5rem;
+        text-align: center;
+        height: inherit;
+        // min-height: auto;
+        border: 1px solid $border-color-light;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: var(--alpha-dim-color, $dim-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        right: 8.8rem;
+        &:last-child {
+            right: 1.2rem;
+        }
+    }
+}
+
+// Input Wrapper
+.input-wrapper {
+    input.form-control {
+        flex: 1;
+        min-width: 40px;
+        font-size: 1.2rem;
+    }
+}
+.input-wrapper-inline {
+    display: flex;
+    position: relative;
+    max-width: 61.3rem;
+    width: 100%;
+    height: 40px;
+    .btn {
+        line-height: 1;
+    }
+}
+.form-row .input-text,
+.dokan-form-control {
+    &::placeholder {
+        color: $grey-color;
+        transition: color .3s;
+    }
+    &::-webkit-input-placeholder {
+        color: $grey-color;
+        transition: color .3s;
+    }
+    &::-moz-placeholder {
+        color: $grey-color;
+        transition: color .3s;
+    }
+    &:focus::placeholder {
+        color: transparent;
+    }
+    &:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    &:focus::-moz-placeholder {
+        color: transparent;
+    }
+}
+
+// Form Row
+.form-row {
+	line-height: 1;
+	.input-text {
+		padding: .8rem 1.6rem;
+		min-height: 5.1rem;
+		color: var(--alpha-body-color, $body-color);
+		font-size: 1.4rem;
+		font-weight: 300;
+		letter-spacing: .05em;
+		transition: background-color .3s, border-color .3s;
+		&::placeholder {
+			color: #666;
+		}
+	}
+	.input-text:focus {
+		border: 1px solid #999;
+	}
+	textarea {
+		padding-top: 1.5rem;
+	}
+	label:not(.checkbox) {
+		display: inline-block;
+		margin-bottom: 1rem;
+		color: var(--alpha-dim-color, $dim-color);
+		font-size: 1.6rem;
+		line-height: 1.7;
+		text-transform: capitalize;
+	}
+	.required {
+		text-decoration: none;
+	}
+}

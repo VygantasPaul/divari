@@ -1,0 +1,94 @@
+@import '../../../assets/sass/config';
+
+.alpha-mini-logo:before, 
+div.dashicons-alpha-logo:before, span.dashicons-alpha-logo:before {
+	padding: 1px;
+}
+#wp-admin-bar-alpha .dashicons-alpha-logo:before {
+	margin-top: 1px;
+	margin-right: 0;
+	margin-left: 0;
+}
+#adminmenu .dashicons-alpha-logo:before {
+	margin-top: 6px;
+}
+.alpha-modal-header .alpha-mini-logo:before,
+.alpha-install-demo-header .alpha-mini-logo:before {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+}
+.alpha-install-demo-header .alpha-mini-logo:before {
+	filter: brightness(0);
+}
+
+.notice-label,
+.alpha-demos-section .nav-link,
+#alpha_registration p.submit .button,
+.alpha-notice-wrapper .alpha-buy-action {
+    text-transform: capitalize;
+}
+#adminmenu .toplevel_page_alpha > a {
+	background: $primary-color;
+	color: #fff;
+    transition: background-color .3s, color .3s;
+}
+
+// customizer panel
+#customize-control-product_type .image label img {
+	max-height: 118px;
+}
+
+.customize-control-kirki-radio-image div.image label {
+	max-width: unset;
+	opacity: .6;
+}
+
+.elementor-choices input:checked + .elementor-choices-label {
+	background-color: transparent;
+}
+
+// Product Edit Panel
+.woocommerce_options_panel input.sale-price-pos-checkbox {
+	margin-bottom: 3px;
+}
+
+// Setup Wizard
+.alpha-install-demo .plugins-used {
+	.thumb {
+		padding-bottom: 4px;
+		width: 30px;
+	}
+
+	h5 {
+		margin-bottom: 0;
+	}
+}
+
+// Change font family in adminpanel
+.alpha-wrap,
+.alpha-modal,
+.alpha-install-demo,
+#customize-theme-controls,
+#customize-controls,
+.blocks-wrapper,
+.alpha-remove-demo {
+	font-family: "Jost", "sans serif" !important;
+}
+
+// White Label
+#toplevel_page_alpha .wp-menu-image img, 
+#wp-admin-bar-alpha .custom-mini-logo img {
+	width: 20px;
+	height: 20px;
+}
+#toplevel_page_alpha .wp-menu-image img {
+	padding: 7px;
+}
+#wp-admin-bar-alpha .custom-mini-logo img {
+	padding: 1px;
+}
+.alpha-admin-logo img {
+	max-height: 76px;
+	object-fit: cover;
+}

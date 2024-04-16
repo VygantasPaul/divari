@@ -1,0 +1,60 @@
+/* -------------------------------------------
+    Counters
+        - Counter 
+        - Countdown
+---------------------------------------------- */
+@if use_component( counter ) {
+	.elementor-counter .elementor-counter-number-wrapper {
+		font-size: 60px;
+		font-weight: 300;
+	}
+
+	.elementor-counter .elementor-counter-title {
+		font-size: 18px;
+		line-height: 1.2;
+		margin-top: 2.4rem;
+	}
+
+	.vertical-counter .elementor-counter {
+		display: flex;
+		align-items: center;
+
+		.elementor-counter-number-wrapper {
+			margin-#{$right}: 1.8rem;
+		}
+
+		.elementor-counter-title {
+			text-align: left;
+			margin-top: 0;
+		}
+	}
+}
+@if use_component( countdown ) {
+    // Count Down
+
+    .countdown-section {
+		min-width: 73px;
+		min-height: 73px;
+		padding: 1.5rem 1rem;
+		.countdown-period {
+			bottom: .8rem;
+		}
+		.product-loop & {
+			min-width: auto;
+			min-height: auto;
+		}
+	}
+	.countdown-label::after {
+		content: ':';
+	}
+	@include mq(sm, max) {
+		.countdown-section {
+			margin-bottom: 1.5rem;
+			min-width: 50px;
+			.product-loop & {
+				margin-bottom: 0;
+				min-width: auto;
+			}
+		}
+	}
+}

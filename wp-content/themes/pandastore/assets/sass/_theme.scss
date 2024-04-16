@@ -1,0 +1,81 @@
+/*
+1. config, mixins
+2. php configuration
+3. base
+4. framework additional css
+5. components
+6. header
+7. footer
+*/
+
+/* 1. Alpha SCSS Framework */
+@import 'config';
+@import 'mixins';
+@import 'direction';
+
+/* 2. Theme SCSS Framework */
+// @set_theme_configuration
+
+/* 3. base */
+@import 'base/base';
+@import 'base/type';
+@import 'base/layout';
+
+@import 'base/grid';
+@import 'base/spacing';
+@import 'base/helper';
+
+/* 4. Framework additional css */
+@import '../../framework/assets/sass/framework';
+
+/* 5. components */
+@import 'compatibility/compatibility';
+@import 'compatibility/shortcode-copy';
+
+@import 'components/slider';
+@import 'components/price-slider';
+@import 'components/accordion';
+@import 'components/alert';
+@import 'components/animation';
+@import 'components/banner';
+@import 'components/blog';
+@import 'components/button';
+@import 'components/category';
+@import 'components/comment';
+@import 'components/cookie-law';
+@import 'components/counter';
+@import 'components/dropdown';
+@import 'components/element';
+@import 'components/filter';
+@import 'components/form';
+@import 'components/hotspot';
+@import 'components/icon';
+@import 'components/image-box';
+@import 'components/image-gallery';
+@import 'components/instagram';
+@import 'components/minipopup';
+@import 'components/search';
+@import 'components/overlay';
+@import 'components/page-header';
+@import 'components/pagination';
+@import 'components/popup';
+@import 'components/product';
+@import 'components/product-single';
+@import 'components/social-icon';
+@import 'components/sidebar';
+@import 'components/sidebar-shop';
+@import 'components/tab';
+@import 'components/testimonial';
+@import 'components/tooltip';
+@import 'components/title';
+@import 'components/vendor';
+@import 'components/widget';
+@import 'components/compare';
+@import 'components/404';
+
+/* 6. header */
+@import 'base/header/header';
+@import 'base/header/menu';
+
+/* 7. footer */
+@import 'base/footer/footer';

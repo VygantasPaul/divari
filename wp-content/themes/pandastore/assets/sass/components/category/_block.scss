@@ -1,0 +1,38 @@
+// Block Category
+@if use_component(cat-type-block) {
+    .cat-type-block {
+        color: var(--alpha-dark-color, $dark-color);
+        margin-bottom: -.5rem;
+        > a {
+            color: inherit;
+        }
+        .woocommerce-loop-category__title {
+            margin: 0;
+            font-weight: 400;
+            line-height: 1.7rem;
+            text-transform: none;
+            transition: color .3s;
+        }
+        &.product-category {
+            >a {
+                display: flex;
+                align-items: center;
+            }
+
+            i {
+                margin: side_values(0 14px 0 0);
+                font-size: 2.2rem;
+                transition: color .3s;
+            }
+        }
+        &.active,
+        &:hover {
+            .woocommerce-loop-category__title {
+                color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+        .active i {
+            color: var(--alpha-primary-color, $primary-color);
+        }
+    }
+}

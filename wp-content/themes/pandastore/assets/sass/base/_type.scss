@@ -1,0 +1,85 @@
+/* -------------------------------------------
+		Typography
+---------------------------------------------- */
+
+body {
+	font-family: var(--alpha-body-font-family), sans-serif;
+	font-weight: var(--alpha-body-font-weight);
+	font-size: var(--alpha-body-font-size);
+	line-height: var(--alpha-body-line-height);
+	letter-spacing: var(--alpha-body-letter-spacing);
+	text-transform: var(--alpha-body-text-transform);
+	color: var(--alpha-body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 2rem;
+	font-family: var(--alpha-heading-font-family), var(--alpha-body-font-family), sans-serif;
+	font-weight: var(--alpha-heading-font-weight, 400);
+	font-size: var(--alpha-heading-font-size);
+	line-height: var(--alpha-heading-line-height, var(--alpha-body-line-height));
+	letter-spacing: var(--alpha-heading-letter-spacing, var(--alpha-body-letter-spacing));
+	text-transform: var(--alpha-heading-text-transform, var(--alpha-body-text-transform));
+	color: var(--alpha-heading-color, var(--alpha-body-color));
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+p {
+	margin: 0 0 2rem;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.6rem; }
+h6 { font-size: 1.4rem; }
+
+.alpha-rounded-skin {
+	.vendor-widget:not(.vendor-widget-3) .vendor-logo,
+	.vendor-widget:not(.vendor-widget-3) .vendor-banner,
+	.vendor-widget-2,
+	.vendor-widget-3 {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.vendor-widget .product-media img {
+		border-radius: 3px;
+	}
+
+	.banner {
+		overflow: hidden;
+	}
+
+	.post-media,
+	.post-media img,
+	.hotspot-box,
+	.post-mask:before,
+	.brand-widget-3,
+	.testimonial,
+	.testimonial .content,
+	.elementor-widget-#{$theme-name}_widget_banner .elementor-widget-container,
+	.alpha-banner-container, // wpbakery banner widget
+	.products .banner {
+		border-radius: 5px;
+	}
+
+	.form-control,
+	.alert,
+	.alert .btn,
+	.wpcf7-form-control,
+	.comment-respond .btn-submit,
+	.calendar_wrap caption,
+	.tagcloud > a,
+	.post-tags > a,
+	.cat-type-frame,
+	.instagram img,
+	.instagram figure:before,
+	.product .countdown-container,
+	.product-hide-details .btn-product,
+	.product-list .btn-product,
+	.alpha-compare-table .compare-value .label-swatch {
+		border-radius: 3px;
+	}
+}

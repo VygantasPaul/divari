@@ -1,0 +1,36 @@
+// Frame Type
+@if use_component(category-type-frame) {
+    .cat-type-frame {
+        color: var(--alpha-dark-color, $dark-color);
+        .woocommerce-loop-category__title {
+            position: relative;
+            color: var(--alpha-dark-color, $dark-color);
+            line-height: 1.6;
+            transition: transform .3s;
+        }
+        .btn {
+            position: absolute;
+            top: 100%;
+            transition: top .3s, transform .3s;
+        }
+        .category-content {
+            top: auto;
+            bottom: 1.2rem;
+            #{$right}: 0;
+            min-height: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+        &:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+            .woocommerce-loop-category__title {
+                transform: translateY(-100%);
+            }
+            .btn {
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+    }
+}

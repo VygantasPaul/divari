@@ -1,0 +1,589 @@
+[09:18:11] <strong>Record</strong> #1
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/planeta-zdarovja.png` is not valid.
+[09:18:11] taxonomy #810 Successfully Imported
+[09:18:11] <strong>Record</strong> #2
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/torglains-logo-160x160.jpg` is not valid.
+[09:18:11] taxonomy #811 Successfully Imported
+[09:18:11] <strong>Record</strong> #3
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/vaig-dut-s-balzamas-600x600.png` is not valid.
+[09:18:11] taxonomy #812 Successfully Imported
+[09:18:11] <strong>Record</strong> #4
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/logo/aronap-logo.jpg` is not valid.
+[09:18:11] taxonomy #813 Successfully Imported
+[09:18:11] <strong>Record</strong> #5
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-tiavit-1.jpg` is not valid.
+[09:18:11] taxonomy #814 Successfully Imported
+[09:18:11] <strong>Record</strong> #6
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/302836-s.jpg` is not valid.
+[09:18:11] taxonomy #815 Successfully Imported
+[09:18:11] <strong>Record</strong> #7
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed.jpg` is not valid.
+[09:18:11] taxonomy #816 Successfully Imported
+[09:18:11] <strong>Record</strong> #8
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/logo/farmgrupp.jpg` is not valid.
+[09:18:11] taxonomy #817 Successfully Imported
+[09:18:11] <strong>Record</strong> #9
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/logo/jutavit-juvapharma-logo-1648124021.jpg` is not valid.
+[09:18:11] taxonomy #818 Successfully Imported
+[09:18:11] <strong>Record</strong> #10
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-3-.png` is not valid.
+[09:18:11] taxonomy #819 Successfully Imported
+[09:18:11] <strong>Record</strong> #11
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/xorst.jpg` is not valid.
+[09:18:11] taxonomy #820 Successfully Imported
+[09:18:11] <strong>Record</strong> #12
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/3e3cb887ceb27678e6ae47f507b8e934.jpg` is not valid.
+[09:18:11] taxonomy #821 Successfully Imported
+[09:18:11] <strong>Record</strong> #13
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed.png` is not valid.
+[09:18:11] taxonomy #822 Successfully Imported
+[09:18:11] <strong>Record</strong> #14
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-4-.png` is not valid.
+[09:18:11] taxonomy #823 Successfully Imported
+[09:18:11] <strong>Record</strong> #15
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/3235d990023bdaba57094294d5ff3346.jpg` is not valid.
+[09:18:11] taxonomy #824 Successfully Imported
+[09:18:11] <strong>Record</strong> #16
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/medikomed-logo.jpg` is not valid.
+[09:18:11] taxonomy #825 Successfully Imported
+[09:18:11] <strong>Record</strong> #17
+[09:18:11] taxonomy #826 Successfully Imported
+[09:18:11] <strong>Record</strong> #18
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed-1-.png` is not valid.
+[09:18:11] taxonomy #827 Successfully Imported
+[09:18:11] <strong>Record</strong> #19
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/botavikos.png` is not valid.
+[09:18:11] taxonomy #828 Successfully Imported
+[09:18:11] <strong>Record</strong> #20
+[09:18:11] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo.jpg` is not valid.
+[09:18:11] taxonomy #829 Successfully Imported
+[09:18:12] <strong>Record</strong> #21
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/atsisi-sti-1-.png` is not valid.
+[09:18:12] taxonomy #830 Successfully Imported
+[09:18:12] <strong>Record</strong> #22
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/logo/specialist.jpg` is not valid.
+[09:18:12] taxonomy #831 Successfully Imported
+[09:18:12] <strong>Record</strong> #23
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/dbe217e5-a411-46ec-b276-4b954107aa93.jpg` is not valid.
+[09:18:12] taxonomy #832 Successfully Imported
+[09:18:12] <strong>Record</strong> #24
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/biolit-3.png` is not valid.
+[09:18:12] taxonomy #833 Successfully Imported
+[09:18:12] <strong>Record</strong> #25
+[09:18:12] taxonomy #834 Successfully Imported
+[09:18:12] <strong>Record</strong> #26
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/atsisi-sti-2-.png` is not valid.
+[09:18:12] taxonomy #835 Successfully Imported
+[09:18:12] <strong>Record</strong> #27
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/8cnRg7PymC1bCS-MzDQHurihCtjuf9zc.jpg` is not valid.
+[09:18:12] taxonomy #836 Successfully Imported
+[09:18:12] <strong>Record</strong> #28
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/logo/marbiofarm.jpg` is not valid.
+[09:18:12] taxonomy #837 Successfully Imported
+[09:18:12] <strong>Record</strong> #29
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/980811.png` is not valid.
+[09:18:12] taxonomy #838 Successfully Imported
+[09:18:12] <strong>Record</strong> #30
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/logo/sachera-med.png` is not valid.
+[09:18:12] taxonomy #839 Successfully Imported
+[09:18:12] <strong>Record</strong> #31
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed-1-.jpg` is not valid.
+[09:18:12] taxonomy #840 Successfully Imported
+[09:18:12] <strong>Record</strong> #32
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/logo/capungidah.png` is not valid.
+[09:18:12] taxonomy #841 Successfully Imported
+[09:18:12] <strong>Record</strong> #33
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/335897-proizvodstviennaia-firma-biokor-540x480.jpg` is not valid.
+[09:18:12] taxonomy #842 Successfully Imported
+[09:18:12] <strong>Record</strong> #34
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/e81c1ddb0b6f67f0ab1a8b8a0b5160d2.jpeg` is not valid.
+[09:18:12] taxonomy #843 Successfully Imported
+[09:18:12] <strong>Record</strong> #35
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/front-z-400.jpg` is not valid.
+[09:18:12] taxonomy #844 Successfully Imported
+[09:18:12] <strong>Record</strong> #36
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/Reamed-Fito-zvakiu-logo.jpg` is not valid.
+[09:18:12] taxonomy #845 Successfully Imported
+[09:18:12] <strong>Record</strong> #37
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/8-prirod-celitel.jpg` is not valid.
+[09:18:12] taxonomy #846 Successfully Imported
+[09:18:12] <strong>Record</strong> #38
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/logo/lekraset-logo.png` is not valid.
+[09:18:12] taxonomy #847 Successfully Imported
+[09:18:12] <strong>Record</strong> #39
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/306877.jpg` is not valid.
+[09:18:12] taxonomy #848 Successfully Imported
+[09:18:12] <strong>Record</strong> #40
+[09:18:12] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/yeekongherb.jpg` is not valid.
+[09:18:12] taxonomy #849 Successfully Imported
+[09:18:13] <strong>Record</strong> #41
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/link-natural-logo-small.png` is not valid.
+[09:18:13] taxonomy #850 Successfully Imported
+[09:18:13] <strong>Record</strong> #42
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-2-.png` is not valid.
+[09:18:13] taxonomy #851 Successfully Imported
+[09:18:13] <strong>Record</strong> #43
+[09:18:13] taxonomy #852 Successfully Imported
+[09:18:13] <strong>Record</strong> #44
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/biolat2.png` is not valid.
+[09:18:13] taxonomy #853 Successfully Imported
+[09:18:13] <strong>Record</strong> #45
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/atsisi-sti--2-.jpg` is not valid.
+[09:18:13] taxonomy #854 Successfully Imported
+[09:18:13] <strong>Record</strong> #46
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-welcome.png` is not valid.
+[09:18:13] taxonomy #855 Successfully Imported
+[09:18:13] <strong>Record</strong> #47
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/uni-pharma-logo.png` is not valid.
+[09:18:13] taxonomy #856 Successfully Imported
+[09:18:13] <strong>Record</strong> #48
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/logo/altaivitaminy-logo.jpg` is not valid.
+[09:18:13] taxonomy #857 Successfully Imported
+[09:18:13] <strong>Record</strong> #49
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/logo/guizhou-miaoyao-logo-1646654073.jpg` is not valid.
+[09:18:13] taxonomy #858 Successfully Imported
+[09:18:13] <strong>Record</strong> #50
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/vetos.png` is not valid.
+[09:18:13] taxonomy #859 Successfully Imported
+[09:18:13] <strong>Record</strong> #51
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed1.jpg` is not valid.
+[09:18:13] taxonomy #860 Successfully Imported
+[09:18:13] <strong>Record</strong> #52
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/korolev-farm.jpg` is not valid.
+[09:18:13] taxonomy #861 Successfully Imported
+[09:18:13] <strong>Record</strong> #53
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/dve-linii.jpg` is not valid.
+[09:18:13] taxonomy #862 Successfully Imported
+[09:18:13] <strong>Record</strong> #54
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/logo/lekopro-logo.png` is not valid.
+[09:18:13] taxonomy #863 Successfully Imported
+[09:18:13] <strong>Record</strong> #55
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ecolekprologo.png` is not valid.
+[09:18:13] taxonomy #864 Successfully Imported
+[09:18:13] <strong>Record</strong> #56
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/tff-logo.jpg` is not valid.
+[09:18:13] taxonomy #865 Successfully Imported
+[09:18:13] <strong>Record</strong> #57
+[09:18:13] taxonomy #866 Successfully Imported
+[09:18:13] <strong>Record</strong> #58
+[09:18:13] taxonomy #867 Successfully Imported
+[09:18:13] <strong>Record</strong> #59
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-6-.png` is not valid.
+[09:18:13] taxonomy #868 Successfully Imported
+[09:18:13] <strong>Record</strong> #60
+[09:18:13] <strong>Warning</strong> : File Download Error : URL `catalog/logo/tvins-tek-logo.png` is not valid.
+[09:18:13] taxonomy #869 Successfully Imported
+[09:18:14] <strong>Record</strong> #61
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/forafarm.jpg` is not valid.
+[09:18:14] taxonomy #870 Successfully Imported
+[09:18:14] <strong>Record</strong> #62
+[09:18:14] taxonomy #871 Successfully Imported
+[09:18:14] <strong>Record</strong> #63
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-1-.png` is not valid.
+[09:18:14] taxonomy #872 Successfully Imported
+[09:18:14] <strong>Record</strong> #64
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/258677-1783.png` is not valid.
+[09:18:14] taxonomy #873 Successfully Imported
+[09:18:14] <strong>Record</strong> #65
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/vitar-zakladni-vzor-RGB.jpg` is not valid.
+[09:18:14] taxonomy #874 Successfully Imported
+[09:18:14] <strong>Record</strong> #66
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/atsisi-sti-3-.png` is not valid.
+[09:18:14] taxonomy #875 Successfully Imported
+[09:18:14] <strong>Record</strong> #67
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/unnamed-2-.jpg` is not valid.
+[09:18:14] taxonomy #876 Successfully Imported
+[09:18:14] <strong>Record</strong> #68
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/LogoRealCaps-3.png` is not valid.
+[09:18:14] taxonomy #877 Successfully Imported
+[09:18:14] <strong>Record</strong> #69
+[09:18:14] taxonomy #878 Successfully Imported
+[09:18:14] <strong>Record</strong> #70
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/9214670-A2EA-4101-8F5B-244C69E092C4-logo.png` is not valid.
+[09:18:14] taxonomy #879 Successfully Imported
+[09:18:14] <strong>Record</strong> #71
+[09:18:14] taxonomy #880 Successfully Imported
+[09:18:14] <strong>Record</strong> #72
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/345853-sibirskaia-klietchatka-1280x768.jpg` is not valid.
+[09:18:14] taxonomy #881 Successfully Imported
+[09:18:14] <strong>Record</strong> #73
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/8c534c3768862c1f-800x800ar.png` is not valid.
+[09:18:14] taxonomy #882 Successfully Imported
+[09:18:14] <strong>Record</strong> #74
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/gogreen-logo.png` is not valid.
+[09:18:14] taxonomy #883 Successfully Imported
+[09:18:14] <strong>Record</strong> #75
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/android-icon-192x192.png` is not valid.
+[09:18:14] taxonomy #884 Successfully Imported
+[09:18:14] <strong>Record</strong> #76
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/atsisi-sti-5-.png` is not valid.
+[09:18:14] taxonomy #885 Successfully Imported
+[09:18:14] <strong>Record</strong> #77
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/logo/kvadrat-c-logo.jpg` is not valid.
+[09:18:14] taxonomy #886 Successfully Imported
+[09:18:14] <strong>Record</strong> #78
+[09:18:14] taxonomy #887 Successfully Imported
+[09:18:14] <strong>Record</strong> #79
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/ezgif-6-c1d3f7d26445.jpg` is not valid.
+[09:18:14] taxonomy #888 Successfully Imported
+[09:18:14] <strong>Record</strong> #80
+[09:18:14] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/italai-1627113680.jpg` is not valid.
+[09:18:14] taxonomy #889 Successfully Imported
+[09:18:15] <strong>Record</strong> #81
+[09:18:15] taxonomy #890 Successfully Imported
+[09:18:15] <strong>Record</strong> #82
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/911/logo-nevskaya-kosmetika-1-1629050663.png` is not valid.
+[09:18:15] taxonomy #891 Successfully Imported
+[09:18:15] <strong>Record</strong> #83
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/vellie-cosmetics-logo-1648124080.jpg` is not valid.
+[09:18:15] taxonomy #892 Successfully Imported
+[09:18:15] <strong>Record</strong> #84
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/medpro-nutraceuticals-sia-1633023050.png` is not valid.
+[09:18:15] taxonomy #893 Successfully Imported
+[09:18:15] <strong>Record</strong> #85
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/apacare-1633025415.png` is not valid.
+[09:18:15] taxonomy #894 Successfully Imported
+[09:18:15] <strong>Record</strong> #86
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/sulsena.png` is not valid.
+[09:18:15] taxonomy #895 Successfully Imported
+[09:18:15] <strong>Record</strong> #87
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/naujas-2021-11/kam.png-1636490580.png` is not valid.
+[09:18:15] taxonomy #896 Successfully Imported
+[09:18:15] <strong>Record</strong> #88
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/naujas-2021-11/Derbos-laboratorio-natural-1636490066.jpg` is not valid.
+[09:18:15] taxonomy #897 Successfully Imported
+[09:18:15] <strong>Record</strong> #89
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/dekost-logo.jpg` is not valid.
+[09:18:15] taxonomy #898 Successfully Imported
+[09:18:15] <strong>Record</strong> #90
+[09:18:15] taxonomy #899 Successfully Imported
+[09:18:15] <strong>Record</strong> #91
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/opc-1639661628.jpg` is not valid.
+[09:18:15] taxonomy #900 Successfully Imported
+[09:18:15] <strong>Record</strong> #92
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/logo-detail-1643382515.png` is not valid.
+[09:18:15] taxonomy #901 Successfully Imported
+[09:18:15] <strong>Record</strong> #93
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/fitomag-logo-nobg-1643388106.png` is not valid.
+[09:18:15] taxonomy #902 Successfully Imported
+[09:18:15] <strong>Record</strong> #94
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/jodnije-marketing-logo.jpg` is not valid.
+[09:18:15] taxonomy #903 Successfully Imported
+[09:18:15] <strong>Record</strong> #95
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/saperta-mediplast-logo-1645114189.png` is not valid.
+[09:18:15] taxonomy #904 Successfully Imported
+[09:18:15] <strong>Record</strong> #96
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/astrofarma-logo-1645364781.jpg` is not valid.
+[09:18:15] taxonomy #905 Successfully Imported
+[09:18:15] <strong>Record</strong> #97
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/emami-limited-logo-1645441990.png` is not valid.
+[09:18:15] taxonomy #906 Successfully Imported
+[09:18:15] <strong>Record</strong> #98
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/logo/galtejafarm-logo-1645555051.png` is not valid.
+[09:18:15] taxonomy #907 Successfully Imported
+[09:18:15] <strong>Record</strong> #99
+[09:18:15] taxonomy #908 Successfully Imported
+[09:18:15] <strong>Record</strong> #100
+[09:18:15] <strong>Warning</strong> : File Download Error : URL `catalog/elevita/absolute-care-1646575007.jpg` is not valid.
+[09:18:15] taxonomy #909 Successfully Imported
+[09:18:16] <strong>Record</strong> #101
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/elevita/piere-cardin-1646575103.png` is not valid.
+[09:18:16] taxonomy #910 Successfully Imported
+[09:18:16] <strong>Record</strong> #102
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo-neogen-dermalogy-1647264596.jpg` is not valid.
+[09:18:16] taxonomy #911 Successfully Imported
+[09:18:16] <strong>Record</strong> #103
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo-missha-1647264631.jpg` is not valid.
+[09:18:16] taxonomy #912 Successfully Imported
+[09:18:16] <strong>Record</strong> #104
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo-apieu-1647264700.jpg` is not valid.
+[09:18:16] taxonomy #913 Successfully Imported
+[09:18:16] <strong>Record</strong> #105
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/babuska.jpg` is not valid.
+[09:18:16] taxonomy #914 Successfully Imported
+[09:18:16] <strong>Record</strong> #106
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/good-mood-logo-1648053019.png` is not valid.
+[09:18:16] taxonomy #915 Successfully Imported
+[09:18:16] <strong>Record</strong> #107
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/vivian-gray-logo-1648193718.png` is not valid.
+[09:18:16] taxonomy #916 Successfully Imported
+[09:18:16] <strong>Record</strong> #108
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/fitokosmetik-logo-1648203175.png` is not valid.
+[09:18:16] taxonomy #917 Successfully Imported
+[09:18:16] <strong>Record</strong> #109
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/vollar-cosmetics-logo-1648205900.png` is not valid.
+[09:18:16] taxonomy #918 Successfully Imported
+[09:18:16] <strong>Record</strong> #110
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/danielle-laroche-logo-1648206154.jpg` is not valid.
+[09:18:16] taxonomy #919 Successfully Imported
+[09:18:16] <strong>Record</strong> #111
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/dizao-natural-logo-1648397175.png` is not valid.
+[09:18:16] taxonomy #920 Successfully Imported
+[09:18:16] <strong>Record</strong> #112
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-frudia-1648398716.jpg` is not valid.
+[09:18:16] taxonomy #921 Successfully Imported
+[09:18:16] <strong>Record</strong> #113
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/paira-pharmaceutical-company-logo-1648408830.jpg` is not valid.
+[09:18:16] taxonomy #922 Successfully Imported
+[09:18:16] <strong>Record</strong> #114
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/dr-retter-logo.png` is not valid.
+[09:18:16] taxonomy #923 Successfully Imported
+[09:18:16] <strong>Record</strong> #115
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/aromika-logo-1648713726.jpg` is not valid.
+[09:18:16] taxonomy #924 Successfully Imported
+[09:18:16] <strong>Record</strong> #116
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-dr-mola-1648472783.jpg` is not valid.
+[09:18:16] taxonomy #925 Successfully Imported
+[09:18:16] <strong>Record</strong> #117
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo-ultru-1648479501.jpg` is not valid.
+[09:18:16] taxonomy #926 Successfully Imported
+[09:18:16] <strong>Record</strong> #118
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/farmakom-logo.png` is not valid.
+[09:18:16] taxonomy #927 Successfully Imported
+[09:18:16] <strong>Record</strong> #119
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/logo/crevil-logo-1649087837.png` is not valid.
+[09:18:16] taxonomy #928 Successfully Imported
+[09:18:16] <strong>Record</strong> #120
+[09:18:16] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/lador-logo.png` is not valid.
+[09:18:16] taxonomy #929 Successfully Imported
+[09:18:17] <strong>Record</strong> #121
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ivano-frankivsk.jpg` is not valid.
+[09:18:17] taxonomy #930 Successfully Imported
+[09:18:17] <strong>Record</strong> #122
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/witpak-logo.jpg` is not valid.
+[09:18:17] taxonomy #931 Successfully Imported
+[09:18:17] <strong>Record</strong> #123
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/all-test-logo.png` is not valid.
+[09:18:17] taxonomy #932 Successfully Imported
+[09:18:17] <strong>Record</strong> #124
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/dr-chen-patika-logo.jpg` is not valid.
+[09:18:17] taxonomy #933 Successfully Imported
+[09:18:17] <strong>Record</strong> #125
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ultradent-logo.png` is not valid.
+[09:18:17] taxonomy #934 Successfully Imported
+[09:18:17] <strong>Record</strong> #126
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/gaba-international-logo.png` is not valid.
+[09:18:17] taxonomy #935 Successfully Imported
+[09:18:17] <strong>Record</strong> #127
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/proctor-and-gamble-logo.jpeg` is not valid.
+[09:18:17] taxonomy #936 Successfully Imported
+[09:18:17] <strong>Record</strong> #128
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/orbis-dental-logo.png` is not valid.
+[09:18:17] taxonomy #937 Successfully Imported
+[09:18:17] <strong>Record</strong> #129
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/ab-naujoji-ruta-logo.jpg` is not valid.
+[09:18:17] taxonomy #938 Successfully Imported
+[09:18:17] <strong>Record</strong> #130
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/estvita-logo.jpg` is not valid.
+[09:18:17] taxonomy #939 Successfully Imported
+[09:18:17] <strong>Record</strong> #131
+[09:18:17] taxonomy #940 Successfully Imported
+[09:18:17] <strong>Record</strong> #132
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/vasu-healthcare.png` is not valid.
+[09:18:17] taxonomy #941 Successfully Imported
+[09:18:17] <strong>Record</strong> #133
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/logo/tulskaja-farmeteticiskaja-fabrika.jpg` is not valid.
+[09:18:17] taxonomy #942 Successfully Imported
+[09:18:17] <strong>Record</strong> #134
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/dr-muller-pharma.svg` is not valid.
+[09:18:17] taxonomy #943 Successfully Imported
+[09:18:17] <strong>Record</strong> #135
+[09:18:17] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/usol-logo.jpg` is not valid.
+[09:18:17] taxonomy #944 Successfully Imported
+[09:18:17] <strong>Record</strong> #136
+[09:18:17] taxonomy #945 Successfully Imported
+[09:18:17] <strong>Record</strong> #137
+[09:18:17] taxonomy #946 Successfully Imported
+[09:18:17] <strong>Record</strong> #138
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/elixir.png` is not valid.
+[09:18:18] taxonomy #947 Successfully Imported
+[09:18:18] <strong>Record</strong> #139
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/revers-cosmetics-logo.png` is not valid.
+[09:18:18] taxonomy #948 Successfully Imported
+[09:18:18] <strong>Record</strong> #140
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ftb-logo.jpg` is not valid.
+[09:18:18] taxonomy #949 Successfully Imported
+[09:18:18] <strong>Record</strong> #141
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ekosvit.jpg` is not valid.
+[09:18:18] taxonomy #950 Successfully Imported
+[09:18:18] <strong>Record</strong> #142
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/golden-farma.png` is not valid.
+[09:18:18] taxonomy #951 Successfully Imported
+[09:18:18] <strong>Record</strong> #143
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/agroselpov.png` is not valid.
+[09:18:18] taxonomy #952 Successfully Imported
+[09:18:18] <strong>Record</strong> #144
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/irbit.png` is not valid.
+[09:18:18] taxonomy #953 Successfully Imported
+[09:18:18] <strong>Record</strong> #145
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/solnce.png` is not valid.
+[09:18:18] taxonomy #954 Successfully Imported
+[09:18:18] <strong>Record</strong> #146
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/malavit.jpg` is not valid.
+[09:18:18] taxonomy #955 Successfully Imported
+[09:18:18] <strong>Record</strong> #147
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/amateg-logo.jpg` is not valid.
+[09:18:18] taxonomy #956 Successfully Imported
+[09:18:18] <strong>Record</strong> #148
+[09:18:18] taxonomy #957 Successfully Imported
+[09:18:18] <strong>Record</strong> #149
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/vesna-logo.png` is not valid.
+[09:18:18] taxonomy #958 Successfully Imported
+[09:18:18] <strong>Record</strong> #150
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/osk-farm.jpg` is not valid.
+[09:18:18] taxonomy #959 Successfully Imported
+[09:18:18] <strong>Record</strong> #151
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/hipokart-logo.png` is not valid.
+[09:18:18] taxonomy #960 Successfully Imported
+[09:18:18] <strong>Record</strong> #152
+[09:18:18] taxonomy #961 Successfully Imported
+[09:18:18] <strong>Record</strong> #153
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/borimed.svg` is not valid.
+[09:18:18] taxonomy #962 Successfully Imported
+[09:18:18] <strong>Record</strong> #154
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ternofarm.jpeg` is not valid.
+[09:18:18] taxonomy #963 Successfully Imported
+[09:18:18] <strong>Record</strong> #155
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/kyiv-vitamin-plant-logo.png` is not valid.
+[09:18:18] taxonomy #964 Successfully Imported
+[09:18:18] <strong>Record</strong> #156
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ekobiz.png` is not valid.
+[09:18:18] taxonomy #965 Successfully Imported
+[09:18:18] <strong>Record</strong> #157
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/esculap-farm-logo.jpg` is not valid.
+[09:18:18] taxonomy #966 Successfully Imported
+[09:18:18] <strong>Record</strong> #158
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/valgeda.png` is not valid.
+[09:18:18] taxonomy #967 Successfully Imported
+[09:18:18] <strong>Record</strong> #159
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ths-cosmetics.png` is not valid.
+[09:18:18] taxonomy #968 Successfully Imported
+[09:18:18] <strong>Record</strong> #160
+[09:18:18] <strong>Warning</strong> : File Download Error : URL `catalog/logo/lubnifarm.png` is not valid.
+[09:18:18] taxonomy #969 Successfully Imported
+[09:18:19] <strong>Record</strong> #161
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/symbiofarm.png` is not valid.
+[09:18:19] taxonomy #970 Successfully Imported
+[09:18:19] <strong>Record</strong> #162
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/sotya.jpg` is not valid.
+[09:18:19] taxonomy #971 Successfully Imported
+[09:18:19] <strong>Record</strong> #163
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/ostrovit-logo.png` is not valid.
+[09:18:19] taxonomy #972 Successfully Imported
+[09:18:19] <strong>Record</strong> #164
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/soap.jpg` is not valid.
+[09:18:19] taxonomy #973 Successfully Imported
+[09:18:19] <strong>Record</strong> #165
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/deepfresh.png` is not valid.
+[09:18:19] taxonomy #974 Successfully Imported
+[09:18:19] <strong>Record</strong> #166
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/kaigert.jpg` is not valid.
+[09:18:19] taxonomy #975 Successfully Imported
+[09:18:19] <strong>Record</strong> #167
+[09:18:19] taxonomy #976 Successfully Imported
+[09:18:19] <strong>Record</strong> #168
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/farmona.png` is not valid.
+[09:18:19] taxonomy #977 Successfully Imported
+[09:18:19] <strong>Record</strong> #169
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/dr-ohhira-logo.png` is not valid.
+[09:18:19] taxonomy #978 Successfully Imported
+[09:18:19] <strong>Record</strong> #170
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/anira.jpg` is not valid.
+[09:18:19] taxonomy #979 Successfully Imported
+[09:18:19] <strong>Record</strong> #171
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/The-Himalaya-Drug-Company-logo.svg.png` is not valid.
+[09:18:19] taxonomy #980 Successfully Imported
+[09:18:19] <strong>Record</strong> #172
+[09:18:19] taxonomy #981 Successfully Imported
+[09:18:19] <strong>Record</strong> #173
+[09:18:19] taxonomy #982 Successfully Imported
+[09:18:19] <strong>Record</strong> #174
+[09:18:19] taxonomy #983 Successfully Imported
+[09:18:19] <strong>Record</strong> #175
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/apothekers-cosmetic-gmbh.jpg` is not valid.
+[09:18:19] taxonomy #984 Successfully Imported
+[09:18:19] <strong>Record</strong> #176
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/eurolab.png` is not valid.
+[09:18:19] taxonomy #985 Successfully Imported
+[09:18:19] <strong>Record</strong> #177
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/vita-lab.png` is not valid.
+[09:18:19] taxonomy #986 Successfully Imported
+[09:18:19] <strong>Record</strong> #178
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/la-rive.png` is not valid.
+[09:18:19] taxonomy #987 Successfully Imported
+[09:18:19] <strong>Record</strong> #179
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/bilka.png` is not valid.
+[09:18:19] taxonomy #988 Successfully Imported
+[09:18:19] <strong>Record</strong> #180
+[09:18:19] <strong>Warning</strong> : File Download Error : URL `catalog/logo/rubella.png` is not valid.
+[09:18:19] taxonomy #989 Successfully Imported
+[09:18:20] <strong>Record</strong> #181
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/logo/planteon.jpg` is not valid.
+[09:18:20] taxonomy #990 Successfully Imported
+[09:18:20] <strong>Record</strong> #182
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/logo/belmedpreparaty.png` is not valid.
+[09:18:20] taxonomy #991 Successfully Imported
+[09:18:20] <strong>Record</strong> #183
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/logo/aromat.png` is not valid.
+[09:18:20] taxonomy #992 Successfully Imported
+[09:18:20] <strong>Record</strong> #184
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/logo/coloris.jpg` is not valid.
+[09:18:20] taxonomy #993 Successfully Imported
+[09:18:20] <strong>Record</strong> #185
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/logo/bioherba-logo.png` is not valid.
+[09:18:20] taxonomy #994 Successfully Imported
+[09:18:20] <strong>Record</strong> #186
+[09:18:20] taxonomy #995 Successfully Imported
+[09:18:20] <strong>Record</strong> #187
+[09:18:20] taxonomy #996 Successfully Imported
+[09:18:20] <strong>Record</strong> #188
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/saponificio-artigianale-fiorentino-rosen-seife-100-g-2.jpg` is not valid.
+[09:18:20] taxonomy #997 Successfully Imported
+[09:18:20] <strong>Record</strong> #189
+[09:18:20] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/logo.png` is not valid.
+[09:18:20] taxonomy #998 Successfully Imported
+[09:18:20] <strong>Record</strong> #190
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/experto.jpg` is not valid.
+[09:18:21] taxonomy #999 Successfully Imported
+[09:18:21] <strong>Record</strong> #191
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/gridem.jpg` is not valid.
+[09:18:21] taxonomy #1000 Successfully Imported
+[09:18:21] <strong>Record</strong> #192
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/bionnex.png` is not valid.
+[09:18:21] taxonomy #1001 Successfully Imported
+[09:18:21] <strong>Record</strong> #193
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/medical-fort-logo-600x600.png` is not valid.
+[09:18:21] taxonomy #1002 Successfully Imported
+[09:18:21] <strong>Record</strong> #194
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/biolek.png` is not valid.
+[09:18:21] taxonomy #1003 Successfully Imported
+[09:18:21] <strong>Record</strong> #195
+[09:18:21] taxonomy #1004 Successfully Imported
+[09:18:21] <strong>Record</strong> #196
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/fortex.jpg` is not valid.
+[09:18:21] taxonomy #1005 Successfully Imported
+[09:18:21] <strong>Record</strong> #197
+[09:18:21] taxonomy #1006 Successfully Imported
+[09:18:21] <strong>Record</strong> #198
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/danpharm.png` is not valid.
+[09:18:21] taxonomy #1007 Successfully Imported
+[09:18:21] <strong>Record</strong> #199
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/logo/iconfit.png` is not valid.
+[09:18:21] taxonomy #1008 Successfully Imported
+[09:18:21] <strong>Record</strong> #200
+[09:18:21] <strong>Warning</strong> : File Download Error : URL `catalog/sablonines-nuotraukos/cemio.png` is not valid.
+[09:18:21] taxonomy #1009 Successfully Imported
+[09:18:22] <strong>Record</strong> #201
+[09:18:22] <strong>Warning</strong> : File Download Error : URL `catalog/logo/elfa-pharm.png` is not valid.
+[09:18:22] taxonomy #1010 Successfully Imported
+[09:18:22] <strong>Record</strong> #202
+[09:18:22] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/alteya-logo.png` is not valid.
+[09:18:22] taxonomy #1011 Successfully Imported
+[09:18:22] <strong>Record</strong> #203
+[09:18:22] <strong>Warning</strong> : File Download Error : URL `catalog/logo/medicata-logo-ezgif.com-webp-to-jpg-converter.jpeg` is not valid.
+[09:18:22] taxonomy #1012 Successfully Imported
+[09:18:22] <strong>Record</strong> #204
+[09:18:22] <strong>Warning</strong> : File Download Error : URL `catalog/Gamintojai/haruharu-wonder.png` is not valid.
+[09:18:22] taxonomy #1013 Successfully Imported
+[09:18:22] <strong>Record</strong> #205
+[09:18:22] taxonomy #1014 Successfully Imported

@@ -1,0 +1,14 @@
+/**
+ * 360 Degree Gallery
+ *
+ * @package Alpha FrameWork
+ * @since 1.0
+ */
+
+@import '../../../assets/sass/config';
+@import '../../../assets/sass/mixins';
+@import '../../../assets/sass/direction';
+
+.woocommerce-Reviews  .select-box select:not(:last-child) {
+    margin-#{$right}: 1.7rem;
+}

@@ -1,0 +1,15 @@
+<wpml-config>
+
+    <custom-types>
+
+        <custom-type translate="1">panda_template</custom-type>
+
+    </custom-types>
+
+    <taxonomies>
+
+        <taxonomy translate="1">product_brand</taxonomy>
+
+    </taxonomies>
+
+</wpml-config>

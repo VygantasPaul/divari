@@ -1,0 +1,33 @@
+/***********************************
+ *             Duplex              *
+ **********************************/
+@if use('duplex') {
+    .duplex-widget {
+        position: relative;
+    }
+    .duplex-wrap {
+        display: block;
+        position: absolute;
+        & ~ * {
+            position: relative;
+        }
+    }
+    .duplex {
+        display: block;
+    }
+    .duplex-text {
+        font-size: 12rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #f4f4f4;
+        text-transform: uppercase;
+        letter-spacing: -.025em;
+    }
+    .duplex-image {
+        width: 100%;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

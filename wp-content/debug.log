@@ -1,0 +1,1 @@
+[09-Mar-2024 18:18:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/vygantyno/Desktop/test/wp-includes/class-wpdb.php on line 1987

@@ -1,0 +1,45 @@
+// Ellipse Type 2
+@if use_component(category-type-ellipse2) {
+    .cat-type-ellipse2 {
+        figure {
+            margin: 0 auto !important;
+            width: 16rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 0px solid #fff;
+            transition: border-width .1s, box-shadow .2s;
+
+            &::after {
+                display: none;
+            }
+        }
+        img {
+            border: 0px solid #fff;
+            border-radius: 50%;
+            transition: border-width .3s;
+        }
+        .category-content {
+            margin-top: 2rem;
+        }
+        .woocommerce-loop-category__title {
+            color: var(--alpha-dim-color, $dim-color);
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            &:hover {
+                color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+
+        &.active figure,
+        &:hover figure {
+            border-width: 1px;
+            border-color: var(--alpha-primary-color, $primary-color);
+        }
+
+        &.active img:not(.d-lazyload),
+        &:hover img:not(.d-lazyload) {
+            border-width: 10px;
+        }
+    }
+}

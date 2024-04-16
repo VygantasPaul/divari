@@ -1,0 +1,58 @@
+/* -------------------------
+- Cookie information popup -
+--------------------------*/
+
+@import '../../../assets/sass/config';
+@import '../../assets/sass/mixins/mixins';
+@import '../../assets/sass/mixins/direction';
+
+.cookies-popup {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    top: 100%;
+    width: 100%;
+    max-width: calc( var(--alpha-site-width) - 2 * var(--alpha-site-gap) );
+    transition: transform .4s;
+    z-index: 2000;
+    .cookies-info {
+        color: #fff;
+        opacity: .8;
+    }
+    &.show {
+        box-shadow: 2px 0px 39px rgba(0,0,0,0.1);
+        transform: translateY(-99%);
+    }
+    .btn + .btn {
+        margin-#{$left}: 1rem;
+    }
+}
+.close-cookie-btn {
+    &::before,
+    &::after {
+        content: '';
+        width: 15px;
+        height: 1px;
+        transform: rotateX(45deg);
+        background-color: #fff;
+    }
+    &::after {
+        transform: rotateX(90deg);
+    }
+}
+@media (max-width: 991px) {
+    .cookies-buttons {
+        margin-#{$left}: 2rem;
+    }
+}
+@media(max-width: 767px) {
+    .cookies-popup .container {
+        flex-direction: column;
+        .cookies-buttons {
+            margin-#{$left}: 0;
+            margin-top: 2rem;
+        }
+    }
+}

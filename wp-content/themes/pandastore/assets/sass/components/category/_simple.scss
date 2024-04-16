@@ -1,0 +1,36 @@
+// Simple Type
+@if use_component(category-type-simple) {
+    .cat-type-simple {
+        figure {
+            border: 1px solid $border-color-light;
+            transition: border-color .3s;
+        }
+        .category-content {
+            padding: 2.3rem 0;
+            mark {
+                color: var(--alpha-body-color, $body-color);
+            }
+        }
+        .woocommerce-loop-category__title {
+            margin-bottom: .5rem;
+            color: var(--alpha-dark-color, $dark-color);
+            &:hover {
+                color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+        &:hover {
+            figure {
+                border-color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+    }
+    .creative-grid {
+        .cat-type-simple {
+            display: flex;
+            flex-direction: column;
+            > a {
+                flex: 1;
+            }
+        }
+    }
+}

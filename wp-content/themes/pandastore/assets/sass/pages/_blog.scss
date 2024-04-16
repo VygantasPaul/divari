@@ -1,0 +1,159 @@
+/*
+    Blog Page
+*/
+@import '../config';
+@import '../mixins';
+@import '../direction';
+
+/* Theme SCSS Framework */
+// @set_theme_configuration
+
+.blog:not(.breadcrumb-divider-active) .breadcrumb-container+main {
+    padding-top: 0;
+}
+
+.post-archive {
+	transition: height .4s;
+
+	.post-filters {
+		margin-top: 2rem;
+	}
+
+    .grid {
+        margin-top: 0;
+    }
+    .post-details {
+		padding-top: 4.4rem;
+		padding-bottom: 5rem;
+
+		&.text-center {
+			padding-#{$right}: 9.5%;
+			padding-#{$left}: 9.5%;
+		}
+    }
+    .post-cats {
+        margin-bottom: .5rem;
+    }
+    .post-title {
+        margin-bottom: 1.2rem;
+        white-space: normal;
+        font-size: 2.8rem ;
+        line-height: 1.5;
+    }
+    .post-content {
+        margin-bottom: 1.6rem;
+		-webkit-line-clamp: 3;
+
+		p {
+			line-height: 26px;
+		}
+    }
+    .btn-readmore {
+        position: relative;
+	}
+
+	.btn-wrapper {
+		margin-top: 3.1rem;
+	}
+
+	.post-calendar {
+		padding: 11px 20px;
+		font-size: 1.6rem;
+
+		&:after {
+			border-#{$left}-width: 1.5rem;
+			border-bottom-width: 3.8rem;
+		}
+	}
+
+    // Post Large
+    .post-full {
+        .post-title {
+            margin-bottom: .4rem; // issue : pixel perfect 7px -> 4px
+            font-size: 2.4rem ;
+        }
+    }
+    // Post overlay
+    .post-mask {
+        .post-details {
+            padding: 0;
+            bottom: 2.8rem;
+        }
+    }
+    .post-wrap:not(.grid-item) {
+        margin-bottom: 8.1rem;
+	}
+
+    .post-wrap:last-child {
+        margin-bottom: 0;
+    }
+    .pagination {
+        margin: 6.9rem 0 3.3rem;
+    }
+    .cols-lg-4  .comments-link {
+        display: none;
+    }
+	.posts + .btn-load {
+		margin-bottom: 2rem;
+	}
+}
+.tag-vitamin, .tag-healthy, .tag-organic, .tag-nutrition {
+	.pos-archive .pagination {
+		margin-top: 0;
+	}
+
+	.post-archive .post-wrap:not(.grid-item) {
+		margin-bottom: 4rem;
+	}
+}
+.post-filter {
+    &:hover, &.active {
+        color: var(--alpha-dark-color, $dark-color);
+    }
+    &:hover &::after,&::after {
+        background-color: var(--alpha-dark-color, $dark-color);
+    }
+}
+@include mq(md) {
+    .posts.list-type-posts .post-wrap {
+        margin-bottom: 6rem;
+    }
+}
+@include mq(md, max) {
+    .post-archive .post-wrap:not(.grid-item) {
+        margin-bottom: 2rem;
+	}
+
+	.post-archive .post-details.text-center {
+		padding-#{$left}: 1rem;
+		padding-#{$right}: 1rem;
+	}
+}
+
+// Masonry Type
+.posts.masonry .post-wrap {
+    margin-bottom: 4rem;
+}
+.posts[data-post-type="mask"] {
+    margin-bottom: 4rem;
+}
+.posts.masonry {
+    margin-bottom: 5rem;
+}
+
+// Post List
+@include mq(xl) {
+    .post-archive .post-list {
+        .post-media {
+            width: calc(47% - 2rem);
+        }
+        .post-details {
+            width: 53%;
+        }
+    }
+}
+@include mq(md, max) {
+    .post-archive .post-full .post-title {
+        font-size: 2rem;
+    }
+}

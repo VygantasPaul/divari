@@ -1,0 +1,37 @@
+// Ellipse Type
+@if use_component(category-type-ellipse) {
+    .cat-type-ellipse {
+        figure {
+            border-radius: 50%;
+            box-shadow: 0 0 50px 0 rgba(0,0,0,.1);
+            background: #fff;
+            overflow: hidden;
+            img {
+                padding: 12px;
+                border-radius: 50%;
+                transform: rotateZ(-10deg) translateX(-14px);
+                transition: transform .3s;
+            }
+        }
+        .woocommerce-loop-category__title {
+            color: var(--alpha-dark-color, $dark-color);
+            &:hover {
+                color: var(--alpha-primary-color, $primary-color);
+            }
+        }
+        mark {
+            color: var(--alpha-body-color, $body-color);
+            text-transform: uppercase;
+        }
+        .category-content {
+            padding-top: 20px;
+        }
+        &.active figure img,
+        &:hover figure img {
+            transform: rotateZ(0);
+        }
+    }
+    .alpha-rounded-skin .cat-type-ellipse.product-category {
+        overflow: visible;
+    }
+}

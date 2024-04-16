@@ -1,0 +1,158 @@
+/* -------------------------------------------
+    Page Header
+        - Page Title
+        - Breadcrumb
+---------------------------------------------- */
+
+// Page Title Bar
+.page-header {
+    background-color: var(--alpha-ptb-bg-color);
+    background-image: var(--alpha-ptb-bg-image);
+    background-repeat: var(--alpha-ptb-bg-repeat);
+    background-position: var(--alpha-ptb-bg-position);
+    background-size: var(--alpha-ptb-bg-size);
+    background-attachment: var(--alpha-ptb-bg-attachment);
+
+    .page-title {
+        font-family: var(--alpha-ptb-title-font-family, var(--alpha-heading-font-family), var(--alpha-body-font-family)), sans-serif;
+        font-weight: var(--alpha-ptb-title-font-weight, 300);
+        font-size: var(--alpha-ptb-title-font-size);
+        line-height: var(--alpha-ptb-title-line-height, var(--alpha-heading-line-height, var(--alpha-heading-line-height)));
+        letter-spacing: var(--alpha-ptb-title-letter-spacing, var(--alpha-heading-letter-spacing, var(--alpha-heading-letter-spacing)));
+        text-transform: var(--alpha-ptb-title-text-transform, var(--alpha-heading-text-transform, var(--alpha-heading-text-transform)));
+        color: var(--alpha-ptb-title-color, var(--alpha-heading-color, var(--alpha-body-color)));
+        margin-bottom: 0;
+    }
+
+    .page-subtitle {
+        font-family: var(--alpha-ptb-subtitle-font-family), var(--alpha-heading-font-family), var(--alpha-body-font-family), sans-serif;
+        font-weight: var(--alpha-ptb-subtitle-font-weight, 400);
+        font-size: var(--alpha-ptb-subtitle-font-size);
+        line-height: var(--alpha-ptb-subtitle-line-height, var(--alpha-heading-line-height, var(--alpha-body-line-height)));
+        letter-spacing: var(--alpha-ptb-subtitle-letter-spacing, var(--alpha-heading-letter-spacing, var(--alpha-body-letter-spacing)));
+        text-transform: var(--alpha-ptb-subtitle-text-transform, var(--alpha-heading-text-transform, var(--alpha-body-text-transform)));
+        color: var(--alpha-ptb-subtitle-color, var(--alpha-heading-color, var(--alpha-body-color)));
+        margin-bottom: 0;
+    }
+}
+.page-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: var(--alpha-ptb-height);
+
+    .breadcrumb {
+        margin-top: 1em;
+        padding: 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &.type-left {
+        align-items: if-ltr(flex-start, flex-end);
+    }
+
+    &.type-center {
+        text-align: center;
+    }
+}
+
+// Page title
+.breadcrumb-container {
+    width: 100%;
+	margin: 0 auto;
+	min-height: 4rem;
+
+    .breadcrumb {
+        border-bottom: 1px solid $border-color-light;
+	}
+
+	li:not(:last-child) {
+		color: $grey-color;
+	}
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.25rem 0 1.25rem 0;
+    font-family: var(--alpha-ptb-breadcrumb-font-family), var(--alpha-body-font-family), sans-serif;
+    font-weight: var(--alpha-ptb-breadcrumb-font-weight, var(--alpha-body-font-weight));
+    font-size: var(--alpha-ptb-breadcrumb-font-size, var(--alpha-body-font-size));
+    line-height: var(--alpha-ptb-breadcrumb-line-height, var(--alpha-body-line-height));
+    letter-spacing: var(--alpha-ptb-breadcrumb-letter-spacing, var(--alpha-body-letter-spacing));
+    text-transform: var(--alpha-ptb-breadcrumb-text-transform, var(--alpha-body-text-transform));
+    color: var(--alpha-ptb-breadcrumb-color, var(--alpha-body-color));
+
+    .delimiter {
+        opacity: .8;
+        margin: 0 .35em;
+        font-size: .9em;
+
+        i {
+            position: relative;
+            top: 1px;
+        }
+        @include if-rtl() {
+            float: right;
+        }
+    }
+
+    a {
+        transition: color .3s, opacity .3s;
+    }
+
+    a:hover {
+        color: var(--alpha-primary-color, var(--alpha-primary-color));
+    }
+
+    &.home-icon {
+        > li:first-of-type > a::before {
+            font-family: $theme-font;
+            content: "\e967";
+        }
+    }
+
+    .breadcrumb_wrapper & {
+        color: inherit;
+    }
+
+    .type-center & {
+        justify-content: center;
+    }
+
+    .error404 &,
+    .single-post &,
+    .single-product &,
+    .blog & {
+        border: none;
+    }
+
+    .breadcrumb-divider-active & {
+        border-bottom: 1px solid $border-color-light;
+    }
+}
+
+.woo-page-header .breadcrumb {
+    border-bottom: 0;
+}
+
+@include mq(lg) {
+    .page-title-bar.type-inline {
+        justify-content: space-between;
+        flex-direction: row;
+
+        .breadcrumb {
+            margin-top: 0;
+        }
+    }
+}
+
+@include mq(md, max) {
+    .page-title-bar .page-title {
+        font-size: 3rem;
+    }
+}

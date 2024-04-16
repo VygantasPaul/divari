@@ -1,0 +1,56 @@
+<?php
+/**
+ * Optimize template
+ *
+ * @author     D-THEMES
+ * @package    WP Alpha Framework
+ * @subpackage Theme
+ * @since      1.0
+ *
+ */
+defined( 'ABSPATH' ) || die;
+
+$step_number  = 1;
+$output_steps = $this->steps;
+$images_url   = apply_filters(
+	'alpha_optimize_step_svg',
+	array(
+		'resources'   => ALPHA_ASSETS . '/images/admin/optimize-wizard/wizard_resources.svg',
+		'lazyload'    => ALPHA_ASSETS . '/images/admin/optimize-wizard/wizard_lazyload.svg',
+		'performance' => ALPHA_ASSETS . '/images/admin/optimize-wizard/wizard_performance.svg',
+		'plugins'     => ALPHA_ASSETS . '/images/admin/optimize-wizard/wizard_plugins.svg',
+		'ready'       => ALPHA_ASSETS . '/images/admin/optimize-wizard/wizard_ready.svg',
+	)
+);
+?>
+		
+<ul class="alpha-admin-panel-steps">
+	<?php
+	foreach ( $output_steps as $step_key => $step ) :
+		$show_link        = true;
+		$li_class_escaped = '';
+		if ( $step_key === $this->step ) {
+			$li_class_escaped = 'active';
+		} elseif ( array_search( $this->step, array_keys( $this->steps ) ) > array_search( $step_key, array_keys( $this->steps ) ) ) {
+			$li_class_escaped = 'done';
+		}
+		if ( $step_key === $this->step ) {
+			$show_link = false;
+		}
+		?>
+		<li class="step <?php echo esc_attr( $li_class_escaped ); ?>">
+			<?php
+			if ( $show_link ) {
+				echo '<a href="' . esc_url( $this->get_step_link( $step_key ) ) . '">' . '<span>' . sprintf( '%02d. ', $step_number ) . '</span>' . alpha_escaped( $step['name'] ) . '</a>';
+			} else {
+				echo '<span>' . sprintf( '%02d. ', $step_number ) . '</span>' . alpha_escaped( $step['name'] );
+			}
+			?>
+		</li>
+		<?php $step_number++; ?>
+	<?php endforeach; ?>
+</ul>
+<div class="alpha-admin-panel-body alpha-card-box alpha-wizard-content alpha-optimize-<?php echo esc_attr( str_replace( '_', '-', $this->step ) ); ?>">
+	<?php $this->view_step(); ?>
+</div>
+
