@@ -290,7 +290,7 @@ if (!empty($alpha_layout['header']) && 'publish' == get_post_status(intval($alph
 												<i class="mb-0 <?php echo $call_us_icon ?>"></i>
 											</a>
 											<div class="contact-content">
-												<span class="live-call"><?php echo (ICL_LANGUAGE_CODE == 'lt') ? 'Pagalba telefonu' : '' ?> <?php echo (ICL_LANGUAGE_CODE == 'en') ? 'Call to us' : '' ?></span><span class="contact-delimiter">:</span> <a title="<?php esc_attr_e('Call to us', 'pandastore') ?>" href="tel:<?php echo $trimmed_number; ?>" class="telephone"><?php echo $call_us_number ?></a>
+												<span class="live-call"><?php esc_attr_e('Call to us', 'pandastore') ?></span><span class="contact-delimiter">:</span> <a title="<?php esc_attr_e('Call to us', 'pandastore') ?>" href="tel:<?php echo $trimmed_number; ?>" class="telephone"><?php echo $call_us_number ?></a>
 											</div>
 
 										</div>

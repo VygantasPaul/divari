@@ -21,36 +21,42 @@ jQuery(document).ready(function () {
     
     if (jQuery('body').hasClass('logged-in')) {
         var bottomBar = jQuery('.bottom_bar');
-        var bottomBarHeight = jQuery('.bottom_bar').height();
-        var topBarHeight = jQuery('.top_bar').height();
+        var top_bar_height = jQuery('.top_bar').height();
+        var bottom_bar_height = jQuery('.bottom_bar').height() ;
         jQuery(window).scroll(function () {
-            var scrollThreshold = topBarHeight + bottomBarHeight + 30; // Arbatinis slenkstis, kada pritaikyti fiksuotą poziciją
-            
+   
+            var scrollThreshold = top_bar_height + bottom_bar_height  + 40;  // Arbatinis slenkstis, kada pritaikyti fiksuotą poziciją
             if (jQuery(window).scrollTop() > scrollThreshold) {
                 bottomBar.addClass('sticky');
+                jQuery('body').addClass('loaded-nav');
                 jQuery('.bottom_bar').css('margin-top', '34px');
             } else {
                 bottomBar.removeClass('sticky');
+                jQuery('body').removeClass('loaded-nav');
                 jQuery('.bottom_bar').css('margin-top', '0');
             }
 
             if (window.matchMedia('(max-width: 768px)').matches)
             {
                 if (jQuery(window).scrollTop() > 120) {
+                    jQuery('body').addClass('loaded-nav');
                     bottomBar.addClass('sticky');
                     jQuery('.bottom_bar').css('margin-top', '34px');
                 } else {
                     bottomBar.removeClass('sticky');
+                    jQuery('body').removeClass('loaded-nav');
                     jQuery('.bottom_bar').css('margin-top', '0');
                 }
             }
             if (window.matchMedia('(max-width: 425px)').matches)
             {
                 if (jQuery(window).scrollTop() > 200) {
+                    jQuery('body').addClass('loaded-nav');
                     bottomBar.addClass('sticky');
                     jQuery('.bottom_bar').css('margin-top', '0');
                 } else {
                     bottomBar.removeClass('sticky');
+                    jQuery('body').removeClass('loaded-nav');
                     jQuery('.bottom_bar').css('margin-top', '0');
                 }
             }
@@ -59,14 +65,17 @@ jQuery(document).ready(function () {
         
     } else {
         var bottomBar = jQuery('.bottom_bar');
-        var topBarHeight = jQuery('.top_bar').height(); // Gauti .top_bar aukštį
+        var top_bar_height = jQuery('.top_bar').height();
+        var bottom_bar_height = jQuery('.bottom_bar').height() ;
         
         jQuery(window).scroll(function () {
-            var scrollThreshold = topBarHeight; // Arbatinis slenkstis, kada pritaikyti fiksuotą poziciją
+            var scrollThreshold = top_bar_height + bottom_bar_height  + 40; // Arbatinis slenkstis, kada pritaikyti fiksuotą poziciją
             
             if (jQuery(window).scrollTop() > scrollThreshold) {
+                jQuery('body').addClass('loaded-nav');
                 bottomBar.addClass('sticky');
             } else {
+                jQuery('body').removeClass('loaded-nav');
                 bottomBar.removeClass('sticky');
             }
         });

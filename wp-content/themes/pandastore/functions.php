@@ -126,71 +126,25 @@ function remove_wc_gallery_zoom()
 
 add_filter( 'rank_math/woocommerce/product_redirection', '__return_false' );
 
-// add_action('init', 'taxonomy_product_code');
-// add_action('init', 'taxonomy_ean');
-// function taxonomy_ean()
-// {
-//     $labels_eans = array(
-//         'name'                       => 'EANS',
-//         'singular_name'              => 'EAN',
-//         'menu_name'                  => 'EANS',
-//         'all_items'                  => __('All Items'),
-//         'parent_item'                => __('Parent Item'),
-//         'parent_item_colon'          => __('Parent Item:'),
-//         'new_item_name'              => __('New Item Name'),
-//         'add_new_item'               => __('Add New Item'),
-//         'edit_item'                  => __('Edit Item'),
-//         'update_item'                => __('Update Item'),
-//         'separate_items_with_commas' => __('Separate Item with commas'),
-//         'search_items'               => __('Search Items'),
-//         'add_or_remove_items'        => __('Add or remove Items'),
-//         'choose_from_most_used'      => __('Choose from the most used Items'),
-//         'not_found'                  => 'No eans codes found',
-//     );
-//     $args_eans = array(
-//         'labels'                     => $labels_eans,
-//         'hierarchical'               => true,
-//         'public'                     => true,
-//         'show_ui'                    => true,
-//         'show_admin_column'          => true,
-//         'show_in_nav_menus'          => true,
-//         'show_tagcloud'              => true,
-//     );
-//     register_taxonomy('ean', 'product', $args_eans);
-//     register_taxonomy_for_object_type('ean', 'product');
-// }
+add_filter( 'rank_math/frontend/breadcrumb/main_term', function( $term, $terms ) {
 
+	$child_terms = get_term_children( $term->term_id, $term->taxonomy );
+	if ( empty( $child_terms ) ) {
+		return $term;
+	}
 
+	$child_term = get_term_by( 'term_id', end( $child_terms ), $term->taxonomy );
 
+	return $child_term;
+}, 10, 2 );
+// add_filter( 'rank_math/frontend/breadcrumb/items', function( $crumbs, $class ) { 
+//     // check if we are viewing single posts
+ 
+//     if(is_product()){ //Unset elements with key 1 		
+//       unset($crumbs[3]); 
+//       $crumbs = array_values($crumbs); 		
+//       return $crumbs; 	
+//     } 	
+//     return $crumbs; 
+// }, 10, 2);
 
-// function taxonomy_product_code()
-// {
-//     $labels_product_code = array(
-//         'name'                       => 'Product codes',
-//         'singular_name'              => 'Product code',
-//         'menu_name'                  => 'Product codes',
-//         'all_items'                  => __('All Items'),
-//         'parent_item'                => __('Parent Item'),
-//         'parent_item_colon'          => __('Parent Item:'),
-//         'new_item_name'              => __('New Item Name'),
-//         'add_new_item'               => __('Add New Item'),
-//         'edit_item'                  => __('Edit Item'),
-//         'update_item'                => __('Update Item'),
-//         'separate_items_with_commas' => __('Separate Item with commas'),
-//         'search_items'               => __('Search Items'),
-//         'add_or_remove_items'        => __('Add or remove Items'),
-//         'choose_from_most_used'      => __('Choose from the most used Items'),
-//         'not_found'                  => 'No product codes found',
-//     );
-//     $args_product_code = array(
-//         'labels'                     => $labels_product_code,
-//         'hierarchical'               => true,
-//         'public'                     => true,
-//         'show_ui'                    => true,
-//         'show_admin_column'          => true,
-//         'show_in_nav_menus'          => true,
-//         'show_tagcloud'              => true,
-//     );
-//     register_taxonomy('product_code', 'product', $args_product_code);
-//     register_taxonomy_for_object_type('product_code', 'product');
-// }

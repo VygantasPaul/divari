@@ -14,7 +14,9 @@ Text Domain: pandastore
 */
 
 /*************** ADD YOUR CUSTOM CSS HERE  ***************/
-
+body.loaded-nav {
+  padding-top: 113px !important;
+}
 .bypostauthor {
   display: block;
 }
@@ -835,6 +837,12 @@ label[for="shipping_method_0_flat_rate10"] .woocommerce-Price-amount.amount {
 .rank-math-breadcrumb p {
   margin: 0;
 }
+.rank-math-breadcrumb .last {
+  display: none;
+}
+nav.rank-math-breadcrumb p span:nth-last-child(2) {
+  display: none;
+}
 .woocommerce .woocommerce-product-gallery__wrapper .p-icon-zoom {
   pointer-events: none !important;
   display: none;
@@ -1061,7 +1069,8 @@ form.mailpoet_form {
 .owl-carousel .owl-item .product-action-vertical a:hover {
   color: #fff;
 }
-.owl-nav-top .owl-nav .owl-next:not(.disabled):hover {
+.owl-nav-top .owl-nav .owl-next:not(.disabled):hover,
+.owl-nav-top .owl-nav .owl-prev:not(.disabled):hover {
   color: #feb20d;
 }
 .product-action-vertical .btn-product-icon:hover {
@@ -1272,7 +1281,8 @@ form.mailpoet_form {
 .intro-slide1 .banner-content {
   left: 7.8%;
   max-width: 40rem;
-  top: 22%;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
 }
 
 
@@ -1291,6 +1301,7 @@ form.mailpoet_form {
 .banner-fixed.intro-slide1 .banner-content h2,
 .banner-fixed.intro-slide2 .banner-content h2 {
   font-size: 2.875em;
+  line-height: 1.1em;
 }
 .icon-box-side .icon-box-title {
   color: #222;
@@ -2272,7 +2283,6 @@ a:hover {
     gap: 10rem;
     justify-content: end;
     padding: 3rem 0rem 3rem;
-    height: auto;
   }
   
   .header .header_inner .inner .order_tracking a span {
@@ -2514,7 +2524,9 @@ a:hover {
 }
 
 @media (min-width: 1600px) {
-  
+  .banner6 {
+    padding: 8.3rem 8rem 7.4rem;
+  }
   .icon-box-side .icon-box-content p {
     white-space: normal;
   }
