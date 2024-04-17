@@ -15,7 +15,7 @@ Text Domain: pandastore
 
 /*************** ADD YOUR CUSTOM CSS HERE  ***************/
 body.loaded-nav {
-  padding-top: 113px !important;
+  padding-top: 116px !important;
 }
 .bypostauthor {
   display: block;
@@ -416,7 +416,7 @@ form.wpcf7-form .wpcf7-textarea {
   color: #feb20d;
 }
 .intro-section .owl-carousel .owl-item.active {
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 
 .page-template-about .owl-carousel .owl-item img {
@@ -608,7 +608,7 @@ form.wpcf7-form .wpcf7-textarea {
 }
 .footer {
   background-color: #222222;
-  padding: 10.5rem 2rem 1.5rem;
+  padding: 6.5rem 2rem 1.5rem;
 }
 .footer-email a {
   color: #999999;
@@ -620,7 +620,7 @@ form.wpcf7-form .wpcf7-textarea {
   color: #f0f0f0;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .footer .footer-logo {
   width: 171px;
@@ -676,7 +676,6 @@ footer .menu li a:hover {
 .footer .footer-description {
   padding-bottom: 4rem;
   padding-right: 4.5rem !important;
-  max-width: 244px;
 }
 .free_deliver p {
   margin-bottom: 0;
@@ -724,7 +723,7 @@ footer .inner div:nth-child(2) .footer-heading{
   padding-top: 0;
 } 
 footer .footer-heading {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
 }
 footer .copyrights,
 footer .payments {
@@ -733,7 +732,6 @@ footer .payments {
 }
 
 footer .footer-social {
-  padding-top: 2rem;
   display: flex;
   gap: 2.5rem;
 }
@@ -837,11 +835,14 @@ label[for="shipping_method_0_flat_rate10"] .woocommerce-Price-amount.amount {
 .rank-math-breadcrumb p {
   margin: 0;
 }
-.rank-math-breadcrumb .last {
+body.single-product .rank-math-breadcrumb .last {
   display: none;
 }
-nav.rank-math-breadcrumb p span:nth-last-child(2) {
+body.single-product nav.rank-math-breadcrumb p span:nth-last-child(2) {
   display: none;
+}
+body.single-product .container {
+  max-width: 100%;
 }
 .woocommerce .woocommerce-product-gallery__wrapper .p-icon-zoom {
   pointer-events: none !important;
@@ -887,10 +888,10 @@ nav.rank-math-breadcrumb p span:nth-last-child(2) {
 .mailpoet_form .mailpoet_submit {
   font-size: 14px !important;
   cursor: pointer;
-  padding: 1.295em 1em 0.95em !important;
+  padding: 1.105em 1em 0.95em !important;
   height: 50px;
   color: #fff;
-  line-height: 1 !important;
+  line-height: 1.5 !important;
 }
 
 .mailpoet_text {
@@ -1378,7 +1379,7 @@ form.mailpoet_form {
   height: 100%;
 }
 .f-height > div:first-child {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .grid {
   display: flex;
@@ -1632,6 +1633,11 @@ form.mailpoet_form {
 .header .bottom_bar > .container-fluid {
   border-bottom: 1px solid #e5e5e5;
 }
+.product-classic .product-hide-details .btn-product {
+  padding-top: 12px;
+  font-size: 1.213em !important;
+}
+
 .minipopup-area.show span.product-quantity {
   font-size: 2rem;
   padding-right: 1rem;
@@ -1845,7 +1851,34 @@ a:hover {
 .mailpoet_paragraph.last {
   flex: 0;
 }
+.woocommerce-product-details__short-description {
+  display: none;
+}
+body.single-product   .woocommerce-Tabs-panel--description table{
+  width: 50%;
+}
+body.single-product .woocommerce-Tabs-panel--description table td{
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #222;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  color: #222;
+  font-weight: 400;
+}
 
+body.single-product .woocommerce-Tabs-panel--description table  tr:first-child td{
+  border-top: 8px solid #222;
+  border-bottom: 4px solid #222;
+  color: #000;
+  text-align: right !important;
+}
+body.single-product .woocommerce-Tabs-panel--description table  tr:last-child td{
+  border-bottom: 8px solid #222;
+}
+body.single-product .top-product .overlay-dark {
+  width: 100%;
+}
 @media (min-width: 550px) {
   .bottom_bar .search-wrapper {
     display: block;
@@ -1855,13 +1888,14 @@ a:hover {
   .products-section h4.banner-desc {
     font-size: 1.5rem;
   }
-  .mailpoet_form .mailpoet_submit {
-    padding: 1.25em 1em 0.95em !important;
-  }
+  
   .product-details del bdi {
     font-size: 0.927em;
   }
-  footer .inner div:nth-child(2) .footer-heading, 
+  footer .inner div:nth-child(2) .footer-heading  {
+    padding-top: 2.3rem;
+  }
+  
   footer .inner div:nth-child(3) .footer-heading,
   footer .inner div:nth-child(4) .footer-heading {
     padding-top: 1rem;
@@ -1932,7 +1966,7 @@ a:hover {
     display: block;
   }
   .f-height > div:first-child {
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
   .grid-item.col-md-6 {
     width: 50%;
@@ -2067,7 +2101,9 @@ a:hover {
   .f-height {
     min-height: 32rem;
   }
-  
+  .header .bottom_bar.sticky {
+    margin-left: 30.5rem;
+  }
   .owl-box-border .active:not(:last-child):before {
     content: "";
     position: absolute;
@@ -2083,7 +2119,7 @@ a:hover {
   }
   
   .footer {
-    padding: 6.5rem 5rem 1.5rem;
+    padding: 6.5rem 3rem 1.5rem;
   }
   .banners-section .banner img {
     max-height: 27rem;
@@ -2426,10 +2462,21 @@ a:hover {
   .flex-left {
     display: none;
   }
+  .footer .footer-description {  
+    max-width: 244px;
+  }
 }
 
 @media (min-width: 1200px) {
-  
+  body.single-product .container {
+    max-width: 97%;
+  }
+  body.single-product .summary.entry-summary .container {
+    max-width: 100%;
+  }
+  .footer .footer-description {  
+    max-width: 100%;
+  }
   .f-height > div:first-child {
     padding-bottom: 17px;
   }
@@ -2476,6 +2523,7 @@ a:hover {
   }
 }
 @media (min-width: 1350px) {
+  
   .banner6 .banner-content2 {
     margin-bottom: 0;
   }
@@ -2503,8 +2551,14 @@ a:hover {
   .icon-box-side .icon-box-content p {
     white-space: normal;
   }
+  .footer {
+    padding: 6.5rem 3rem 1.5rem;
+  }
 }
 @media (min-width: 1500px) {
+  .footer {
+    padding: 10.5rem 4rem 1.5rem;
+  }
   .services-section .icon-box-side .icon-box-icon i {
     font-size: 4.7rem;
   }
@@ -2520,6 +2574,10 @@ a:hover {
   
   .footer-list ul li:nth-child(2) p {
     width: 100%;
+  }
+  body.single-product .header .bottom_bar {
+    padding: 3rem 0rem 0rem;
+    
   }
 }
 
@@ -2541,7 +2599,9 @@ a:hover {
   .col-xxl-9 {
     width: 75%;
   }
-  
+  .container {
+    max-width: 97%;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -2554,15 +2614,16 @@ a:hover {
   }
   
   .header .bottom_bar {
-    padding: 3rem 0rem 3.5rem;
+    padding: 3rem 0rem 3.2rem;
     
   }
   .products-section .banner {
     min-height: 35rem;
   }
   .owl-stage img.big-slide {
-    min-height: 796px;
+    min-height: 610px;
   }
+  
 }
 @media (min-width: 1844px) {
   .products-section .banner {
@@ -2573,6 +2634,8 @@ a:hover {
   .products-section .banner {
     min-height: 35rem;
   }
+  
+  
 }
 @media (min-width: 1900px) {
   .products-section .banner {
@@ -2591,7 +2654,7 @@ a:hover {
     width: 75%;
   }
   .container {
-    max-width: 90%;
+    max-width: 100%;
   }
   
 }
@@ -2600,7 +2663,9 @@ a:hover {
 }
 
 @media (min-width:2240px) {
-  
+  .owl-stage img.big-slide {
+    min-height: 795px;
+  }
 }
 @media (min-width: 2240px) {
   

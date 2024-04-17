@@ -26,7 +26,7 @@ class Hooks {
 
 		$attributeTaxonomies = wc_get_attribute_taxonomy_names();
 
-		foreach ( array_merge( [ 'product_cat', 'product_tag', 'product_shipping_class' ], $attributeTaxonomies ) as $type ) {
+		foreach ( array_merge( [ 'product_brand', 'product_cat', 'product_tag', 'product_shipping_class' ], $attributeTaxonomies ) as $type ) {
 
 			$restObject = Factory::create( 'term' );
 

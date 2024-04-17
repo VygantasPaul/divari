@@ -59,6 +59,7 @@ require_once alpha_framework_path(ALPHA_FRAMEWORK_PATH . '/init.php');
 
 function custom_enqueue_scripts_and_styles() {
   wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0', true);
+  wp_enqueue_script('jquery-numerator', 'https://d-themes.com/html/panda/vendor/jquery.count-to/jquery-numerator.min.js', array(), '1.0', true);
   wp_enqueue_script('owl-carousel', 'https://d-themes.com/html/panda/vendor/owl-carousel/owl.carousel.min.js', array(), '1.0', true);
   wp_enqueue_script('main-min', 'https://d-themes.com/html/panda/js/main.min.js', array('jquery'), '1.0', true);
   // Enqueue stylesheets

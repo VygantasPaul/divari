@@ -6,8 +6,6 @@ get_header()
 ?>
 
 
-<link rel="stylesheet" type="text/css" href="https://d-themes.com/html/panda/vendor/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="https://d-themes.com/html/panda/vendor/owl-carousel/owl.carousel.min.css">
 
 <main class="main">
     <div class="page-content about-page">
@@ -53,7 +51,6 @@ get_header()
                 <?php endwhile; ?>
                 <?php endif; ?>
             </section>
-
         </div>
         <section class="pb-6" style="background-color:#f9f8f4">
             <div class="container text-center">
@@ -61,10 +58,8 @@ get_header()
                 <?php while( have_rows('group_2') ): the_row(); ?>
                 <?php $subtitle = get_sub_field('subtitle'); ?>
                 <?php $heading = get_sub_field('heading'); ?>
-
                 <h4 class="text-uppercase text-body font-weight-normal ls-1 mb-3"> <?php echo $subtitle ?></h4>
                 <h2 class="desc-title mb-10"> <?php echo $heading ?></h2>
-
                 <div class="row cols-lg-3 cols-md-2 cols-1 justify-content-center">
                     <?php if (have_rows('column')): ?>
                     <?php while (have_rows('column')): the_row(); ?>
@@ -81,24 +76,6 @@ get_header()
                     </div>
                     <?php endwhile; ?>
                     <?php endif; ?>
-                    <!-- <div class="counter mb-6">
-                        <span class="count-to text-primary" data-fromvalue="0" data-tovalue="80" data-duration="2000"
-                            data-delimiter="," data-append="K+">0</span>
-                        <div class="counter-content">
-                            <h4 class="count-title text-dark mb-2">PRODUCTS SALES</h4>
-                            <p class="count-desc mx-auto" style="width: 80%;">Lorem ipsum dolor sit amet,
-                                consectetur adip do eiusmod tempor incididunt ut</p>
-                        </div>
-                    </div>
-                    <div class="counter mb-6">
-                        <span class="count-to text-primary" data-fromvalue="0" data-tovalue="90" data-duration="2000"
-                            data-delimiter="," data-append="%">0</span>
-                        <div class="counter-content">
-                            <h4 class="count-title text-dark mb-2">HAPPY CUSTOMERS</h4>
-                            <p class="count-desc mx-auto" style="width: 80%;">Lorem ipsum dolor sit amet,
-                                consectetur adip do eiusmod tempor incididunt ut</p>
-                        </div>
-                    </div> -->
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
@@ -260,9 +237,7 @@ get_header()
     </div>
 </main>
 <?php get_template_part( 'sidebar'); ?>
-<script src="https://d-themes.com/html/panda/vendor/owl-carousel/owl.carousel.min.js"></script>
-<script src="https://d-themes.com/html/panda/vendor/jquery.count-to/jquery-numerator.min.js"></script>
-<script src="https://d-themes.com/html/panda/js/main.min.js"></script>
+
 <?php
 get_footer();
 

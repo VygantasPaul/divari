@@ -227,7 +227,7 @@ get_header();
 
 
                                             ?>
-                                            <div class="product shadow-media text-center">
+                                            <div class="product shadow-media text-center <?php echo (get_field('top_product') == true ) ? 'top-product' : '' ?>">
                                                 <figure class="product-media">
                                                     <?php if (has_post_thumbnail()) : ?>
                                                         <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a> <!-- Displaying the thumbnail -->
@@ -393,7 +393,7 @@ get_header();
 
 
                                             ?>
-                                            <div class="product shadow-media text-center">
+                                            <div class="product shadow-media text-center <?php echo (get_field('top_product') == true ) ? 'top-product' : '' ?>">
                                                 <figure class="product-media">
                                                     <?php if (has_post_thumbnail()) : ?>
                                                         <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a> <!-- Displaying the thumbnail -->
@@ -536,7 +536,7 @@ get_header();
 
 
                                             ?>
-                                            <div class="product shadow-media text-center">
+                                            <div class="product shadow-media text-center <?php echo (get_field('top_product') == true ) ? 'top-product' : '' ?>">
                                                 <figure class="product-media">
                                                     <?php if (has_post_thumbnail()) : ?>
                                                         <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a> <!-- Displaying the thumbnail -->
@@ -657,7 +657,7 @@ get_header();
 
 
                                             ?>
-                                            <div class="product shadow-media text-center">
+                                            <div class="product shadow-media text-center <?php echo (get_field('top_product') == true ) ? 'top-product' : '' ?>">
                                                 <figure class="product-media">
                                                     <?php if (has_post_thumbnail()) : ?>
                                                         <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a> <!-- Displaying the thumbnail -->

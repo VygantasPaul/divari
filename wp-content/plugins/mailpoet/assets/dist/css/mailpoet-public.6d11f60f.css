@@ -171,7 +171,7 @@ textarea.parsley-error {
   .mailpoet_list_label,
   .mailpoet_date_label {
     font-size: 16px !important;
-    line-height: 1.4 !important;
+   
   }
 }
 @media screen and (max-width: 499px) {
@@ -201,7 +201,7 @@ textarea.parsley-error {
   .mailpoet_form .mailpoet_message,
   .mailpoet_form .mailpoet_paragraph select {
     font-size: 16px !important;
-    line-height: 1.4 !important;
+   
   }
 }
 .mailpoet_form.mailpoet_form_successfully_send {

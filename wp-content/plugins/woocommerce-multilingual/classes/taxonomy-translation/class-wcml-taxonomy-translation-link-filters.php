@@ -25,7 +25,7 @@ class WCML_Taxonomy_Translation_Link_Filters {
 	public function override_translation_notice_text( $text, $notice ) {
 		if ( 'taxonomy-term-help-notices' === $notice['group'] ) {
 			$taxonomy = get_taxonomy( $notice['id'] );
-			$built_in_taxonomies = [ 'product_cat', 'product_tag', 'product_shipping_class' ];
+			$built_in_taxonomies = [ 'product_brand', 'product_cat', 'product_tag', 'product_shipping_class' ];
 			if ( false !== $taxonomy && in_array( $notice['id'], $built_in_taxonomies ) ) {
 
 				$link = sprintf(
@@ -58,7 +58,7 @@ class WCML_Taxonomy_Translation_Link_Filters {
 		$base_url = admin_url( 'admin.php' );
 		$args     = [ 'page' => 'wpml-wcml' ];
 
-		$built_in_taxonomies = [ 'product_cat', 'product_tag', 'product_shipping_class' ];
+		$built_in_taxonomies = [ 'product_brand', 'product_cat', 'product_tag', 'product_shipping_class' ];
 		if ( in_array( $taxonomy, $built_in_taxonomies, true ) ) {
 			$args['tab'] = $taxonomy;
 		} else {

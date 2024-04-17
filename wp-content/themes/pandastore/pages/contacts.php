@@ -8,9 +8,6 @@ get_header();
 
 ?>
 
-
-<link rel="stylesheet" type="text/css" href="https://d-themes.com/html/panda/vendor/owl-carousel/owl.carousel.min.css">
-
 <main class="main">
     <div class="page-content contact-page">
         <div class="container">
@@ -121,5 +118,3 @@ jQuery(document).ready(function() {
 
 });
 </script>
-<script src="https://d-themes.com/html/panda/vendor/owl-carousel/owl.carousel.min.js"></script>
-<script src="https://d-themes.com/html/panda/js/main.min.js"></script>

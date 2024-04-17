@@ -52,7 +52,6 @@ get_header()
 </main>
 <?php get_template_part('sidebar'); ?>
 
-<script src="https://d-themes.com/html/panda/js/main.min.js"></script>
 <?php
 get_footer();
 

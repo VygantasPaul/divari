@@ -17,7 +17,7 @@ $hide_second_product_code = get_option('hide_second_product_code_on_user_side', 
 <?php if ('no' == $hide_product_code && ( $value || ( 'yes' != get_option('product_code_hide_empty_field') && !$value ) || 'variable' == $product_type )) : ?>
 	<span class="wo_productcode">
 		<input type="hidden" value="<?php echo absint($post->ID); ?>" id="product_id" />
-		<strong><?php echo esc_html( __('Product Code', 'pandastore')); ?>:</strong>
+		<strong><?php echo  __('Product Code', 'pandastore'); ?>:</strong>
 		<span class="stl_codenum"><?php echo esc_html(!$value ? __('N/A', 'product-code-for-woocommerce') : $value); ?></span>
 	</span>
 <?php endif; ?>

@@ -234,7 +234,7 @@ if ( alpha_get_option( 'catalog_mode' ) ) {
 ?>
 
 
-<li class="<?php echo esc_attr( apply_filters( 'alpha_product_wrap_class', $wrap_class ) ); ?>"<?php echo esc_attr( $wrapper_attr ); ?>>
+<li class="<?php echo (get_field('top_product') == true ) ? 'top-product' : '' ?> <?php echo esc_attr( apply_filters( 'alpha_product_wrap_class', $wrap_class ) ); ?>"<?php echo esc_attr( $wrapper_attr ); ?>>
 
 	<?php do_action( 'alpha_product_loop_before_item', $product_type ); ?>
 
