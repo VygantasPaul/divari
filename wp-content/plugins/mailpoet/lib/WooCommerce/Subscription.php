@@ -118,7 +118,7 @@ class Subscription {
 
     return '<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox" data-automation-id="woo-commerce-subscription-opt-in">
       <input id="mailpoet_woocommerce_checkout_optin" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" ' . $checked . ' type="checkbox" name="' . $this->wp->escAttr($inputName) . '" value="1" />
-      <span>' . __('I would like to receive exclusive emails with discounts and product information','pandastore') . '</span>
+      <span>' . $this->wp->escHtml($labelString) . '</span>
     </label>';
   }
 
@@ -221,7 +221,7 @@ class Subscription {
     // Hide AutomateWoo checkout opt-in so we won't end up with two opt-ins
     $this->wp->removeAction(
       'woocommerce_checkout_after_terms_and_conditions',
-      [ 'AutomateWoo\Frontend', 'output_checkout_optin_checkbox' ]
+      ['AutomateWoo\Frontend', 'output_checkout_optin_checkbox']
     );
   }
 

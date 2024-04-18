@@ -70,62 +70,80 @@ if (!empty($product_tabs)) :
 			}
 		endif;
 		?>
-		<?php if (have_rows('content_for_top_product')) : ?>
-			<?php $counter = 0; ?>
-			<div class="top-product wrap">
-				<?php while (have_rows('content_for_top_product')) : the_row(); ?>
-					<?php $heading = get_sub_field('heading') ?>
-					<?php $description = get_sub_field('description') ?>
-					<?php $image = get_sub_field('image') ?>
-					<div class="row">
-						<?php if ($counter % 2 === 0) : ?>
-							<div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
-								<div class="overlay-dark">
-									<figure>
-											<img src="<?php echo $image['url'] ?>" alt="product-banner">
-									
-										<!-- <video style="filter: invert(0);">
-												<source src="video/memory-of-a-woman.mp4" type="video/mp4">
-											</video> -->
-									</figure>
-									<!-- <div class="banner-content text-center y-50 x-50">
-											<a class="video-btn video-play" href="video/memory-of-a-woman.mp4" data-video-source="hosted"><i class="fas fa-play"></i></a>
-										</div> -->
-								</div>
+		<?php if (have_rows('top_product_group')) : ?>
+			<?php while (have_rows('top_product_group')) : the_row(); ?>
+				<?php $top_heading = get_sub_field('top_heading') ?>
+				<?php $top_description = get_sub_field('top_description') ?>
+				<?php $top_h3 = get_sub_field('top_h3') ?>
+				<div class="top-product heading">
+					<div class="row ">
+						<div class="col-12">
+							<h2 class="title title-line title-underline mb-lg-8">
+								<span>
+									<?php echo $top_heading ?>
+								</span>
+							</h2>
+							<h3 class="content-title mb-0">
+								<?php echo $top_h3 ?>
+							</h3>
+							<div class=" mb-4 mb-lg-8">
+								<?php echo $top_description ?>
 							</div>
-							<div class="col-12 col-md-6 col-lg-6 with-content-index content-index-1 pl-2 pl-lg-7">
-								<h4 class="content-subtitle mt-2">
-									<?php echo $heading ?>
-								</h4>
-								<?php echo $description ?>
-							</div>
-						<?php else : ?>
-							<div class="col-12 col-md-6 col-lg-6 with-content-index content-index-1 pl-2 pl-lg-7">
-								<h4 class="content-subtitle mt-2">
-									<?php echo $heading ?>
-								</h4>
-								<?php echo $description ?>
-							</div>
-							<div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
-								<div class="overlay-dark">
-									<figure>
-									
-											<img src="<?php echo $image['url'] ?>" alt="product-banner" >
-										
-										<!-- <video style="filter: invert(0);">
-												<source src="video/memory-of-a-woman.mp4" type="video/mp4">
-											</video> -->
-									</figure>
-									<!-- <div class="banner-content text-center y-50 x-50">
-											<a class="video-btn video-play" href="video/memory-of-a-woman.mp4" data-video-source="hosted"><i class="fas fa-play"></i></a>
-										</div> -->
-								</div>
-							</div>
-						<?php endif; ?>
+						</div>
 					</div>
-					<?php $counter++ ?>
-				<?php endwhile; ?>
-			</div>
+				</div>
+
+				<?php if (have_rows('content_for_top_product')) : ?>
+				<?php $total_rows = count(get_field('content_for_top_product')); ?>
+					<?php $counter = 1; ?>
+					<div class="top-product wrap">
+						<?php while (have_rows('content_for_top_product')) : the_row(); ?>
+							<?php $heading = get_sub_field('heading') ?>
+							<?php $description = get_sub_field('description') ?>
+							<?php $image = get_sub_field('image') ?>
+							<div class="row align-center <?php echo ($counter  === 1) ? 'mt-0 pt-0' : 'mt-0 mt-lg-10 pt-8' ?>">
+								<?php if ($counter % 2 === 0) : ?>
+									<div class="col-12 col-md-6 col-lg-6 with-content-index content-index-1 pr-2 pr-lg-7 order-first order-md-last order-lg-first">
+										<h4 class="content-subtitle mt-2">
+											<?php echo $heading ?>
+										</h4>
+										<?php echo $description ?>
+										<div class="counter-number">
+											<?php echo $counter ?>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-6 d-flex align-items-center order-last  order-md-first order-lg-first">
+										<div class="overlay-dark">
+											<figure>
+												<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+											</figure>
+										</div>
+									</div>
+
+								<?php else : ?>
+									<div class="col-12 col-md-6 col-lg-6 d-flex align-items-center order-last order-lg-first  ">
+										<div class="overlay-dark">
+											<figure>
+												<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+											</figure>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-6 with-content-index content-index-2  pl-2 pl-lg-7 order-first order-lg-first  ">
+										<h4 class="content-subtitle mt-2">
+											<?php echo $heading ?>
+										</h4>
+										<?php echo $description ?>
+										<div class="counter-number">
+											<?php echo $counter ?>
+										</div>
+									</div>
+								<?php endif; ?>
+							</div>
+							<?php $counter++ ?>
+						<?php endwhile; ?>
+					</div>
+				<?php endif; ?>
+			<?php endwhile; ?>
 		<?php endif; ?>
 		<?php foreach ($product_tabs as $key => $product_tab) : ?>
 			<?php
@@ -147,22 +165,26 @@ if (!empty($product_tabs)) :
 			} elseif ('tab' == $product_tabs_type) {
 				$panel_class .= ' tab-pane panel wc-tab';
 			} else {
-				$panel_class .= ' tab-section';
-			}
+				$panel_class .= ' tab-section'; ?>
+		
+			<?php }
 			$panel_class .= ' woocommerce-Tabs-panel woocommerce-Tabs-panel--' . esc_attr($key);
 				?>
 
 				<div class="<?php echo esc_attr($panel_class); ?>" id="tab-<?php echo esc_attr($key); ?>" role="tabpanel" <?php echo 'section' != $product_tabs_type ? ' aria-labelledby="tab-title-' . esc_attr($key) . '"' : ''; ?>>
+			
 					<?php
 					if ('section' == $product_tabs_type && !in_array($key, array('description', 'additional_information', 'vendor', 'reviews'))) :
 					?>
 						<h2 class="title-wrapper title-underline">
 							<span class="title"><?php echo alpha_strip_script_tags($product_tab['title']); ?></span>
 						</h2>
+						
 					<?php
 					endif;
-
-					if (isset($product_tab['callback'])) {
+?> 
+				 <?php	if (isset($product_tab['callback'])) {
+					
 						call_user_func($product_tab['callback'], $key, $product_tab);
 					}
 					?>

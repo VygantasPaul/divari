@@ -138,6 +138,8 @@ add_filter( 'rank_math/frontend/breadcrumb/main_term', function( $term, $terms )
 
 	return $child_term;
 }, 10, 2 );
+
+
 // add_filter( 'rank_math/frontend/breadcrumb/items', function( $crumbs, $class ) { 
 //     // check if we are viewing single posts
  

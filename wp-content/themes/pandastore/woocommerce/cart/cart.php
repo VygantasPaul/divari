@@ -142,14 +142,20 @@ do_action( 'woocommerce_before_cart' );
 					<tr>
 						<td colspan="6" class="actions pr-0 pt-6 pl-0 pb-0">
 							<div class="cart-actions mb-10">
-							
+								<div>
+							<div class="cart-title-flex">
+							<h3 class="cart-title"><?php esc_html_e( 'Cart Totals', 'pandastore' ); ?></h3>
+							<?php wc_cart_totals_subtotal_html(); ?>
+							</div>
+							<div class="flex-box">
 							<button type="submit" class="btn btn-outline btn-dim btn-border-thin wc-action-btn<?php echo ( alpha_get_option( 'cart_auto_update' ) ? ' d-none' : '' ) . ( is_rtl() ? ' ml-2' : '' ); ?> mb-4" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'pandastore' ); ?>"><?php esc_html_e( 'Update cart', 'pandastore' ); ?></button>
 								
 
 									<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class=" btn  btn-dim btn-border-thin mb-4 mr-2 btn-icon-right  alt wc-forward">
 									<?php esc_html_e( 'Proceed to checkout', 'pandastore' ); ?><?php echo is_rtl() ? '' : '<i class="' . ALPHA_ICON_PREFIX . '-icon-arrow-long-right"></i>'; ?>
 									</a>
-						
+									</div>
+							</div>
 							</div>
 
 									<?php if ( wc_coupons_enabled() ) { ?>

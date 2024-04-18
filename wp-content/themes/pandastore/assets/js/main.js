@@ -1,12 +1,11 @@
 function hideContentAfterDelay() {
-
-    var minipopupAreas = jQuery('.minipopup-area').has('.product-purchased');
-    if (minipopupAreas.length) {
+   
+    var minipopupAreas = jQuery('.minipopup-box').has('.product-purchased');
+    if (minipopupAreas.length && !minipopupAreas.is(':empty')) {
         setTimeout(function() {
             minipopupAreas.empty(); // Išvalome turinį
-            // Galite naudoti šią eilutę, jei norite tiesiog paslėpti elementus be ištrinimo
-            // minipopupAreas.hide();
-        }, 120000); // 2 minutes
+            console.log("Timeout function triggered");
+        }, 30000); // 2 minutes
     }
 }
 
@@ -22,6 +21,16 @@ jQuery(document).ready(function () {
     // Paleidžiame funkciją
     hideContentAfterDelay();
     
+    var emailInput = $('.mailpoet_text');
+
+    // Get the current placeholder value
+    var currentPlaceholder = emailInput.attr('placeholder');
+
+    // Remove the asterisk (*) from the placeholder
+    var newPlaceholder = currentPlaceholder.replace('*', '');
+
+    // Set the new placeholder value
+    emailInput.attr('placeholder', newPlaceholder);
     jQuery('.sidebar-toggle-mobile').on('click', function (e) {
         e.stopPropagation();
         e.preventDefault(); // Prevent default link behavior
@@ -49,10 +58,22 @@ jQuery(document).ready(function () {
                 jQuery('body').removeClass('loaded-nav');
                 jQuery('.bottom_bar').css('margin-top', '0');
             }
-
+            if (window.matchMedia('(max-width: 820px)').matches)
+            {
+                var scrollThreshold = top_bar_height + bottom_bar_height  + 23;
+                if (jQuery(window).scrollTop() > scrollThreshold) {
+                    jQuery('body').addClass('loaded-nav');
+                    bottomBar.addClass('sticky');
+                    jQuery('.bottom_bar').css('margin-top', '34px');
+                } else {
+                    bottomBar.removeClass('sticky');
+                    jQuery('body').removeClass('loaded-nav');
+                    jQuery('.bottom_bar').css('margin-top', '0');
+                }
+            }
             if (window.matchMedia('(max-width: 768px)').matches)
             {
-                var scrollThreshold = top_bar_height + bottom_bar_height  + 22;
+                var scrollThreshold = top_bar_height + bottom_bar_height  + 21;
                 if (jQuery(window).scrollTop() > scrollThreshold) {
                     jQuery('body').addClass('loaded-nav');
                     bottomBar.addClass('sticky');
@@ -107,9 +128,9 @@ jQuery(document).ready(function () {
                     jQuery('.bottom_bar').css('margin-top', '0');
                 }
             }
-            if (window.matchMedia('(max-width: 768px)').matches)
+            if (window.matchMedia('(max-width: 820px)').matches)
             {
-                var scrollThreshold = top_bar_height + bottom_bar_height  + 22;
+                var scrollThreshold = top_bar_height + bottom_bar_height  + 21;
                 if (jQuery(window).scrollTop() > scrollThreshold) {
                     jQuery('body').addClass('loaded-nav');
                     bottomBar.addClass('sticky');
@@ -120,6 +141,20 @@ jQuery(document).ready(function () {
                     jQuery('.bottom_bar').css('margin-top', '0');
                 }
             }
+            if (window.matchMedia('(max-width: 7680px)').matches)
+            {
+                var scrollThreshold = top_bar_height + bottom_bar_height  + 21;
+                if (jQuery(window).scrollTop() > scrollThreshold) {
+                    jQuery('body').addClass('loaded-nav');
+                    bottomBar.addClass('sticky');
+                    jQuery('.bottom_bar').css('margin-top', '0');
+                } else {
+                    bottomBar.removeClass('sticky');
+                    jQuery('body').removeClass('loaded-nav');
+                    jQuery('.bottom_bar').css('margin-top', '0');
+                }
+            }
+       
             if (window.matchMedia('(max-width: 425px)').matches)
             {
                 var scrollThreshold = top_bar_height + bottom_bar_height  + 20;

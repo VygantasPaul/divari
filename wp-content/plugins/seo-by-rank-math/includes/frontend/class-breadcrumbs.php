@@ -118,7 +118,7 @@ class Breadcrumbs {
 			wp_parse_args(
 				$args,
 				[
-					'delimiter'   => '&nbsp;&#47;&nbsp;',
+					'delimiter'   => '',
 					'wrap_before' => '<nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p>',
 					'wrap_after'  => '</p></nav>',
 					'before'      => '',
@@ -148,7 +148,7 @@ class Breadcrumbs {
 			$html .= $args['before'] . $link . $args['after'];
 
 			if ( $size !== $key + 1 ) {
-				$html .= '<span class="separator"> ' . wp_kses_post( $this->settings['separator'] ) . ' </span>';
+				$html .= '<span class="separator">  </span>';
 			}
 		}
 
