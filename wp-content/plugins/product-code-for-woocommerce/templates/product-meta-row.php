@@ -14,18 +14,24 @@ $hide_second_product_code = get_option('hide_second_product_code_on_user_side', 
 
 ?>
 
-<?php if ('no' == $hide_product_code && ( $value || ( 'yes' != get_option('product_code_hide_empty_field') && !$value ) || 'variable' == $product_type )) : ?>
+<?php if ('no' == $hide_product_code && ($value || ('yes' != get_option('product_code_hide_empty_field') && !$value) || 'variable' == $product_type)) : ?>
 	<span class="wo_productcode">
 		<input type="hidden" value="<?php echo absint($post->ID); ?>" id="product_id" />
-		<strong><?php echo  __('Product Code', 'pandastore'); ?>:</strong>
-		<span class="stl_codenum"><?php echo esc_html(!$value ? __('N/A', 'product-code-for-woocommerce') : $value); ?></span>
+		<table>
+			<tr>
+				<th>
+					<strong><?php echo  __('Product Code', 'pandastore'); ?></strong>
+				</th>
+				<td><span class="stl_codenum"><?php echo esc_html(!$value ? __('N/A', 'product-code-for-woocommerce') : $value); ?></span></td>
+			</tr>
+		</table>
 	</span>
 <?php endif; ?>
 
 <?php
 if ('no' == $hide_second_product_code && 'yes' == get_option('product_code_second')) {
-	if ($value_second || ( 'yes' != get_option('product_code_hide_empty_field') && !$value_second ) || 'variable' == $product_type) :
-		?>
+	if ($value_second || ('yes' != get_option('product_code_hide_empty_field') && !$value_second) || 'variable' == $product_type) :
+?>
 		<span class="wo_productcode_second">
 			<input type="hidden" value="<?php echo absint($post->ID); ?>" id="product_id_second" />
 			<span><?php echo esc_html($text_second ? $text_second : __('Product Code', 'pandastore')); ?>:</span>

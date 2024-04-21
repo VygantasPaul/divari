@@ -1,22 +1,25 @@
 <?php
 
 /**
+ * @package              PRODUCT_CODE
+ * @wordpress-plugin
+ * 
  * Plugin Name:          Product Code for WooCommerce
  * Plugin URI:           http://wordpress.org/plugins/product-code-for-woocommerce
  * Description:          Plugin provides a unique internal product identifier in addition to the GTIN, EAN, SKU and UPC throughout the order process. A secondary product code field can be activated from setup.
- * Version:              1.4.5
+ * Version:              1.4.6
  * Author:               Artios Media
  * Author URI:           http://www.artiosmedia.com
  * Assisting Developer:  Repon Hossain
- * Copyright:            © 2018-2023 Artios Media (email: contact@artiosmedia.com).
+ * Copyright:            © 2018-2024 Artios Media (email: contact@artiosmedia.com).
  * License:              GNU General Public License v3.0
  * License URI:          http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:          product-code-for-woocommerce
  * Domain Path:          /languages
- * Tested up to:         6.3.2
+ * Tested up to:         6.5.0
  * WC requires at least: 4.6.0
- * WC tested up to:      8.2.0
- * PHP tested up to:     8.2.11
+ * WC tested up to:      8.7.0
+ * PHP tested up to:     8.3.4
  */
 
 namespace Artiosmedia\WC_Product_Code;
@@ -29,8 +32,8 @@ define('PRODUCT_CODE_FIELD_NAME_SECOND', '_product_code_second');
 define('PRODUCT_CODE_TEMPLATE_PATH', __DIR__ . '/templates');
 define('PRODUCT_CODE_PAYPAL_ID', 'E7LS2JGFPLTH2');
 
-define('PRODUCT_CODE_VERSION', '1.4.5');
-define('PRODUCT_CODE_DB_VERSION', '1.4.5');
+define('PRODUCT_CODE_VERSION', '1.4.6');
+define('PRODUCT_CODE_DB_VERSION', '1.4.6');
 
 load_plugin_textdomain('product-code-for-woocommerce', false, basename(dirname(__FILE__)) . '/languages');
 

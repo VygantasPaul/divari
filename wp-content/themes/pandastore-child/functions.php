@@ -41,3 +41,4 @@ function remove_wc_gallery()
 }
 
 
+remove_action('woocommerce_before_checkout_billing_form', 'woocommerce_review_order_before_order_total', 10);

@@ -140,6 +140,44 @@ add_filter( 'rank_math/frontend/breadcrumb/main_term', function( $term, $terms )
 }, 10, 2 );
 
 
+remove_action('woocommerce_review_order_after_cart_contents', 'my_custom_function', 10);
+remove_action('woocommerce_review_order_before_shipping', 'my_custom_function', 10);
+
+function my_custom_function() {
+    echo '<p></p>';
+}
+
+
+add_action( 'woocommerce_before_checkout_billing_form', 'add_custom_billing_text', 10 );
+
+function add_custom_billing_text() {
+    echo '<p>Čia gali būti jūsų norimas papildomas tekstas apie sąskaitos informaciją.</p>';
+}
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+
+add_action( 'woocommerce_checkout_after_order_review', 'add_custom_submit_button_to_checkout' );
+
+function add_custom_submit_button_to_checkout() {
+    echo '<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order">Place Order</button>';
+}
+
+
+
+// add_filter('woocommerce_checkout_fields','remove_checkout_fields');
+// function remove_checkout_fields($fields){
+//     unset($fields['billing']['billing_first_name']);
+//     unset($fields['billing']['billing_last_name']);
+//     unset($fields['billing']['billing_address_1']);
+//     unset($fields['billing']['billing_address_2']);
+//     unset($fields['billing']['billing_city']);
+//     unset($fields['billing']['billing_postcode']);
+//     unset($fields['billing']['billing_country']);
+//     unset($fields['billing']['billing_state']);
+//     return $fields;
+// }
 // add_filter( 'rank_math/frontend/breadcrumb/items', function( $crumbs, $class ) { 
 //     // check if we are viewing single posts
  

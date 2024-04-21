@@ -2,7 +2,7 @@
 /**
  * EAN for WooCommerce - Display Class
  *
- * @version 4.8.8
+ * @version 4.9.2
  * @since   2.0.0
  *
  * @author  Algoritmika Ltd
@@ -212,7 +212,7 @@ class Alg_WC_EAN_Display {
 	/**
 	 * render_product_columns.
 	 *
-	 * @version 2.4.0
+	 * @version 4.9.2
 	 * @since   1.0.0
 	 */
 	function render_product_columns( $column, $product_id ) {
@@ -231,6 +231,9 @@ class Alg_WC_EAN_Display {
 				}
 			}
 			if ( ! empty( $values ) ) {
+				if ( 'no' === get_option( 'alg_wc_ean_backend_column_show_duplicates', 'yes' ) ) {
+					$values = array_unique( $values );
+				}
 				echo implode( ', ', $values );
 			}
 		}
@@ -368,10 +371,20 @@ class Alg_WC_EAN_Display {
 	 */
 	function get_ean_output_html( $ean, $template, $product_id = false, $wrapper_atts = '' ) {
 		$template = alg_wc_ean()->core->shortcodes->do_shortcode( $template, array( 'product_id' => $product_id ) );
-		$ean_html = '<span class="ean">' . $ean . '</span>';
+		// Generate HTML for EAN inside a td element
+		$ean_html = '<tr><th>EAN</th><td><span class="ean">' . $ean . '</span></td></tr>';
+		// Replace %ean% placeholder with the EAN HTML
 		$template = str_replace( '%ean%', $ean_html, $template );
+		// Remove the first occurrence of "EAN:" outside the table structure
+		$template = preg_replace('/EAN: /', '', $template, 1);
+		// Wrap the product meta HTML in a div with class "product-meta-inner"
+		$template = '<div class="product-ean"><table><tbody>' . $template . '</tbody></table></div>';
+		// Return the HTML with the product meta wrapped in the div
 		return '<span class="sku_wrapper ean_wrapper"' . $wrapper_atts . '>' . $template . '</span>';
 	}
+	
+	
+	
 
 	/**
 	 * add_ean.

@@ -1,17 +1,17 @@
 === Product Code for WooCommerce ===
 
-Contributors: Artiosmedia, repon.wp
+Contributors: Artiosmedia, steveneray, repon.wp
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E7LS2JGFPLTH2
-Tags: product code, product number, bin number, warehouse tracking, order number, sku, mpn
+Tags: product code, product number, bin number, warehouse tracking, order number
 Requires at least: 4.6
-Tested up to: 6.4.1
-Version: 1.4.5
-Stable tag: 1.4.5
+Tested up to: 6.5.0
+Version: 1.4.6
+Stable tag: 1.4.6
 Requires PHP: 7.4.33
 License: GPLv3 or later license and included
 URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin will allow a user to add a unique internal product identifier in addition to the GTIN, EAN, SKU or UPC throughout the order process. Minor setup, small memory footprint and concise results. As an added bonus, a second optional Product Code field is included, switchable from the settings panel.
+This plugin will allow a user to add up to two additional internal product identifiers in addition to the GTIN, EAN, SKU or UPC to the order process.
 
 == Description ==
 
@@ -37,14 +37,14 @@ As of <strong>version 1.4.1</strong>, an administrator can choose to hide the de
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Enter the Product Code under the SKU from either Variable or Simple products.
 
-== Technical Details for Release 1.4.5 ==
+== Technical Details for Release 1.4.6 ==
 
 Load time: 0.279 s; Memory usage: 3.61 MiB
-PHP up to tested version: 8.2.12
-MySQL up to tested version: 8.0.35
-MariaDB up to tested version: 11.3.1
-cURL up to tested version: 8.4.0, OpenSSL/3.1.4
-PHP 7.4, 8.0, 8.1, and 8.2 compliant.
+PHP up to tested version: 8.3.4
+MySQL up to tested version: 8.0.36
+MariaDB up to tested version: 11.3.2
+cURL up to tested version: 8.6.0, OpenSSL/3.2.1
+PHP 7.4, 8.0, 8.1, 8.2 and 8.3 compliant.
 
 == Using in Multisite Installation ==
 
@@ -134,6 +134,11 @@ Please click the following link to check the current stability of this plugin:
 None to report as of the release version
 
 == Changelog ==
+
+1.4.6 04/06/24
+- Minor updates and edits
+- Assure compliance with WordPress 6.5
+- Assure compliance with WooCommerce 8.7.0
 
 1.4.5 11/30/23
 - Fixed Cross Site Scripting (XSS) vulnerability

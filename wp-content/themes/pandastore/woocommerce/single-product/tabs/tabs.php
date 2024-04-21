@@ -210,15 +210,25 @@ if (!empty($product_tabs)) :
 			foreach ($brands as $brand_id => $brand_name) {
 				$brand_image = get_term_meta($brand_id, 'brand_thumbnail_id', true);
 				if ($brand_image) {
+					// If brand has an image
 					$has_brand_image = true;
-					$brand_html     .= '<a class="brand" href="' . esc_url(get_term_link($brand_id, 'product_brand')) . '" title="' . esc_attr($brand_name) . '">';
-					$brand_html     .= wp_get_attachment_image($brand_image, 'full');
-					$brand_html     .= '</a>';
+					$brand_html .= '<a class="brand" href="' . esc_url(get_term_link($brand_id, 'product_brand')) . '" title="' . esc_attr($brand_name) . '">';
+					$brand_html .= wp_get_attachment_image($brand_image, 'full');
+					$brand_html .= '</a>';
 				} else {
-					$brand_html .= '<span>' . esc_html__('Brand: ', 'pandastore') . '<a href="' . esc_url(get_term_link($brand_id, 'product_brand')) . '" title="' . esc_attr($brand_name) . '">' . esc_html($brand_name) . '</a></span>';
+					// If brand doesn't have an image, wrap the link within a <table> tag
+					$brand_html .= '<table>';
+					$brand_html .= 
+					'<tr>
+					<th>' . esc_html__('Brand: ', 'pandastore') . '</th> 
+					<td><a href="' . esc_url(get_term_link($brand_id, 'product_brand')) . '" title="' . esc_attr($brand_name) . '">' . esc_html($brand_name) . '</a>
+					</td>
+					</tr>';
+					$brand_html .= '</table>';
 				}
 			}
 		}
+		
 
 		?>
 		<div class="product_meta<?php echo !$has_brand_image ? ' no-brand-image' : ''; ?>">
@@ -238,25 +248,6 @@ if (!empty($product_tabs)) :
 					echo alpha_strip_script_tags($brand_html);
 				endif;
 				?>
-
-				<?php echo wc_get_product_category_list($product->get_id(), ', ', '<span class="posted_in">' . _n('Category:', 'Categories:', count($product->get_category_ids()), 'pandastore') . ' ', '</span>'); ?>
-
-				<?php if (wc_product_sku_enabled() && ($product->get_sku() || $product->is_type('variable'))) : ?>
-
-					<span class="sku_wrapper">
-						<?php esc_html_e('SKU:', 'pandastore'); ?>
-						<span class="sku">
-							<?php
-							$sku = $product->get_sku();
-							echo alpha_escaped($sku) ? $sku : esc_html__('N/A', 'pandastore');
-							?>
-						</span>
-					</span>
-
-				<?php endif; ?>
-
-				<?php echo wc_get_product_tag_list($product->get_id(), ', ', '<span class="tagged_as">' . _n('Tag:', 'Tags:', count($product->get_tag_ids()), 'pandastore') . ' ', '</span>'); ?>
-
 			</div>
 
 			<?php do_action('woocommerce_product_meta_end'); ?>

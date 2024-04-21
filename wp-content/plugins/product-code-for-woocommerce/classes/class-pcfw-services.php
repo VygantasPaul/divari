@@ -53,7 +53,7 @@ class PCFW_Services {
 		if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
 			add_action('admin_notices', array($this, 'show_woocommerce_missing_notice'));
 			add_action('network_admin_notices', array($this, 'show_woocommerce_missing_notice'));
-			deactivate_plugins('pandastore-core/pandastore-core.php');
+			deactivate_plugins('product-code-for-woocommerce/product-code-for-woocommerce.php');
 			if (isset($_GET['activate'])) {
 
 				// Do not sanitize it because we are destroying the variables from URL
@@ -69,8 +69,8 @@ class PCFW_Services {
 			//wp_enqueue_script( 'product-code-frontend', PRODUCT_CODE_URL . '/assets/js/stl_custom.js', [ 'wc-add-to-cart-variation', 'jquery' ]);
 
 			wp_enqueue_style('product-code-frontend', PRODUCT_CODE_URL . '/assets/css/single-product.css');
-			wp_enqueue_script('pandastore-core', PRODUCT_CODE_URL . '/assets/js/editor.js', ['jquery'], PRODUCT_CODE_VERSION);
-			wp_localize_script('pandastore-core', 'PRODUCT_CODE', ['ajax' => admin_url('admin-ajax.php'), 'HIDE_EMPTY' => get_option('product_code_hide_empty_field')]);
+			wp_enqueue_script('product-code-for-woocommerce', PRODUCT_CODE_URL . '/assets/js/editor.js', ['jquery'], PRODUCT_CODE_VERSION);
+			wp_localize_script('product-code-for-woocommerce', 'PRODUCT_CODE', ['ajax' => admin_url('admin-ajax.php'), 'HIDE_EMPTY' => get_option('product_code_hide_empty_field')]);
 		endif;
 	}
 
@@ -82,7 +82,7 @@ class PCFW_Services {
 	public function plugin_row_filter($links, $plugin_file, $plugin_data) {
 
 		// Not our plugin.
-		if (strpos($plugin_file, 'pandastore-core.php') === false) {
+		if (strpos($plugin_file, 'product-code-for-woocommerce.php') === false) {
 			return $links;
 		}
 
@@ -96,11 +96,11 @@ class PCFW_Services {
 			'width'		 => 772,
 			'height'	 => 563,
 
-		], self_admin_url('plugin-install.php')), $plugin_data['Name'], __('View Details', 'pandastore-core'));
+		], self_admin_url('plugin-install.php')), $plugin_data['Name'], __('View Details', 'product-code-for-woocommerce'));
 		$links['donation'] = sprintf('<a href="%s" target="_blank">%s</a>', add_query_arg([
 			'cmd'			 => '_s-xclick',
 			'hosted_button_id'	 => PRODUCT_CODE_PAYPAL_ID
-		], 'https://www.paypal.com/cgi-bin/webscr'), __('Donation for Homeless', 'pandastore-core'));
+		], 'https://www.paypal.com/cgi-bin/webscr'), __('Donation for Homeless', 'product-code-for-woocommerce'));
 
 		return $links;
 	}
@@ -135,7 +135,7 @@ class PCFW_Services {
 		if ('yes' == get_option('product_code')) :
 			if (isset($cart_item[$simple_field_name])) {
 				$cart_data[] = array(
-					'name'	 =>  __('Product Code', 'pandastore-core'),
+					'name'	 => $txt ? $txt : __('Product Code', 'product-code-for-woocommerce'),
 					'value'	 => $cart_item[$simple_field_name],
 				);
 			}
@@ -149,7 +149,7 @@ class PCFW_Services {
 			// $cart_data = [];
 			if (isset($cart_item[$simple_field_name])) {
 				$cart_data[] = array(
-					'name'	 => __('Product Code', 'pandastore-core'),
+					'name'	 => $txt ? $txt : __('Product Code', 'product-code-for-woocommerce'),
 					'value'	 => $cart_item[$simple_field_name],
 				);
 			}
@@ -162,12 +162,12 @@ class PCFW_Services {
 		$simple_field_name	 = PRODUCT_CODE_FIELD_NAME;
 		$txt			 = get_option('product_code_text', '');
 		if (isset($values[$simple_field_name])) {
-			$item->add_meta_data(( $txt ? $txt : __('Product Code', 'pandastore-core') ), $values[$simple_field_name], false);
+			$item->add_meta_data(( $txt ? $txt : __('Product Code', 'product-code-for-woocommerce') ), $values[$simple_field_name], false);
 		}
 		$simple_field_name	 = PRODUCT_CODE_FIELD_NAME_SECOND;
 		$txt			 = get_option('product_code_text_second', '');
 		if (isset($values[$simple_field_name])) {
-			$item->add_meta_data(( $txt ? $txt : __('Product Code', 'pandastore-core') ), $values[$simple_field_name], false);
+			$item->add_meta_data(( $txt ? $txt : __('Product Code', 'product-code-for-woocommerce') ), $values[$simple_field_name], false);
 		}
 	}
 
@@ -190,7 +190,7 @@ class PCFW_Services {
 		$formatted_meta[$field_name] = (object) [
 			'key'		 => $field_name,
 			'value'		 => $value,
-			'display_key'	 => $txt ? $txt : __('Product Code', 'pandastore-core'),
+			'display_key'	 => $txt ? $txt : __('Product Code', 'product-code-for-woocommerce'),
 			'display_value'	 => $value,
 		];
 
@@ -212,7 +212,7 @@ class PCFW_Services {
 		$formatted_meta[$field_name] = (object) [
 			'key'		 => $field_name,
 			'value'		 => $value,
-			'display_key'	 => $txt ? $txt : __('Product Code', 'pandastore'),
+			'display_key'	 => $txt ? $txt : __('Product Code', 'product-code-for-woocommerce'),
 			'display_value'	 => $value,
 		];
 		return $formatted_meta;
@@ -221,12 +221,12 @@ class PCFW_Services {
 	public function get_order_item_meta_display_key($display_key, $meta, $item) {
 		if (PRODUCT_CODE_FIELD_NAME === $meta->key) {
 			$txt = get_option('product_code_text', '');
-			return $txt ? $txt : __('Product Code', 'pandastore');
+			return $txt ? $txt : __('Product Code', 'product-code-for-woocommerce');
 		}
 
 		if (PRODUCT_CODE_FIELD_NAME_SECOND === $meta->key) {
 			$txt = get_option('product_code_text_second', '');
-			return $txt ? $txt : __('Product Code', 'pandastore');
+			return $txt ? $txt : __('Product Code', 'product-code-for-woocommerce');
 		}
 		return $display_key;
 	}
@@ -243,12 +243,12 @@ class PCFW_Services {
 	}
 
 	public function add_woocommerce_settings($sections) {
-		$sections['product_code_settings'] = __('Product Code', 'pandastore-core');
+		$sections['product_code_settings'] = __('Product Code', 'product-code-for-woocommerce');
 		return $sections;
 	}
 
 	public function add_to_wc_submenu() {
-		add_submenu_page('woocommerce', __('Product Code', 'pandastore-core'), __('Product Code', 'pandastore-core'), 'manage_options', 'wc_product_code', function () {
+		add_submenu_page('woocommerce', __('Product Code', 'product-code-for-woocommerce'), __('Product Code', 'product-code-for-woocommerce'), 'manage_options', 'wc_product_code', function () {
 			printf("<script>window.location='%s'</script>", esc_url_raw(admin_url('admin.php?page=wc-settings&tab=products&section=product_code_settings')));
 		});
 	}
@@ -259,107 +259,107 @@ class PCFW_Services {
 
 			// Add Title to the Settings
 			$settings_slider[]	 = array(
-				'name'	 => __('Product Code Settings', 'pandastore-core'),
+				'name'	 => __('Product Code Settings', 'product-code-for-woocommerce'),
 				'type'	 => 'title',
 				'id'	 => 'product_code'
 			);
 
 			// Add first checkbox option
 			$settings_slider[] = array(
-				'name'	 => __('Show Product Code', 'pandastore-core'),
+				'name'	 => __('Show Product Code', 'product-code-for-woocommerce'),
 				'id'	 => 'product_code',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Display product code on user side on the products posts, checkout, cart, and receipts.', 'pandastore-core'),
+				'desc'	 => __('Display product code on user side on the products posts, checkout, cart, and receipts.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'	 => __('Hide Product Code', 'pandastore-core'),
+				'name'	 => __('Hide Product Code', 'product-code-for-woocommerce'),
 				'id'	 => 'hide_product_code_on_user_side',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Hide product code on user-side product posts only.', 'pandastore-core'),
+				'desc'	 => __('Hide product code on user-side product posts only.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'		 => __('Field Title', 'pandastore-core'),
+				'name'		 => __('Field Title', 'product-code-for-woocommerce'),
 				'desc_tip'	 => true,
 				'id'		 => 'product_code_text',
 				'type'		 => 'text',
 				'default'	 => 'Product Code',
-				'desc'		 => __('Field title can be edited to read anything, no longer than 12 characters including spaces.', 'pandastore-core'),
+				'desc'		 => __('Field title can be edited to read anything, no longer than 12 characters including spaces.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'		 => __('Products Column Title', 'pandastore-core'),
+				'name'		 => __('Products Column Title', 'product-code-for-woocommerce'),
 				'desc_tip'	 => true,
 				'id'		 => 'product_code_quik_edit_text',
 				'type'		 => 'text',
 				'default'	 => 'Code',
-				'desc'		 => __('Admin products column title can be edited to read anything, no longer than 12 characters including spaces.', 'pandastore-core'),
+				'desc'		 => __('Admin products column title can be edited to read anything, no longer than 12 characters including spaces.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'	 => __('Enable Second Product Code', 'pandastore-core'),
+				'name'	 => __('Enable Second Product Code', 'product-code-for-woocommerce'),
 				'id'	 => 'product_code_second_show',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Display second product code field.', 'pandastore-core'),
+				'desc'	 => __('Display second product code field.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'	 => __('Show Second Product Code', 'pandastore-core'),
+				'name'	 => __('Show Second Product Code', 'product-code-for-woocommerce'),
 				'id'	 => 'product_code_second',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Display product code on user side on the products posts, checkout, cart, and receipts.', 'pandastore-core'),
+				'desc'	 => __('Display product code on user side on the products posts, checkout, cart, and receipts.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'	 => __('Hide Second Product Code', 'pandastore-core'),
+				'name'	 => __('Hide Second Product Code', 'product-code-for-woocommerce'),
 				'id'	 => 'hide_second_product_code_on_user_side',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Hide second product code on user-side product posts only.', 'pandastore-core'),
+				'desc'	 => __('Hide second product code on user-side product posts only.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'		 => __('Second Field Title', 'pandastore-core'),
+				'name'		 => __('Second Field Title', 'product-code-for-woocommerce'),
 				'desc_tip'	 => true,
 				'id'		 => 'product_code_text_second',
 				'type'		 => 'text',
 				'default'	 => 'Product Code 2',
-				'desc'		 => __('Field title can be edited to read anything, no longer than 14 characters including spaces.', 'pandastore-core'),
+				'desc'		 => __('Field title can be edited to read anything, no longer than 14 characters including spaces.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'		 => __('Second Products Column Title', 'pandastore-core'),
+				'name'		 => __('Second Products Column Title', 'product-code-for-woocommerce'),
 				'desc_tip'	 => true,
 				'id'		 => 'product_code_quik_edit_text_second',
 				'type'		 => 'text',
 				'default'	 => 'Code 2',
-				'desc'		 => __('Admin second products column title can be edited to read anything, no longer than 14 characters including spaces.', 'pandastore-core'),
+				'desc'		 => __('Admin second products column title can be edited to read anything, no longer than 14 characters including spaces.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'	 => __('Hide Field When Empty', 'pandastore-core'),
+				'name'	 => __('Hide Field When Empty', 'product-code-for-woocommerce'),
 				'id'	 => 'product_code_hide_empty_field',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Hide primary and secondary user side display when field is left blank.', 'pandastore-core'),
+				'desc'	 => __('Hide primary and secondary user side display when field is left blank.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[] = array(
-				'name'	 => __('Enable Structured Data Product', 'pandastore-core'),
+				'name'	 => __('Enable Structured Data Product', 'product-code-for-woocommerce'),
 				'id'	 => 'pcfw_structure_data',
 				'type'	 => 'checkbox',
 				'css'	 => 'min-width:300px;',
-				'desc'	 => __('Apply structure data property set on the product code.', 'pandastore-core'),
+				'desc'	 => __('Apply structure data property set on the product code.', 'product-code-for-woocommerce'),
 			);
 
 			$settings_slider[]	 = array(
-				'name'		 => __('Structured Data Product', 'pandastore-core'),
-				'desc'		 => __('Choose the structured data property set when using a trade number for schema compliance.', 'pandastore-core'),
+				'name'		 => __('Structured Data Product', 'product-code-for-woocommerce'),
+				'desc'		 => __('Choose the structured data property set when using a trade number for schema compliance.', 'product-code-for-woocommerce'),
 				'id'		 => 'pcfw_structured_data_field',
 				'default'	 => 'gtin',
 				'type'		 => 'select',
@@ -431,7 +431,7 @@ class PCFW_Services {
 
 	public function show_woocommerce_missing_notice() {
 		echo '<div class="notice notice-error is-dismissible">
-            <p>' . esc_html__('Product Code for WooCommerce Add-on requires Woocommerce plugin to be installed and activated.', 'pandastore-core') . '</p>
+            <p>' . esc_html__('Product Code for WooCommerce Add-on requires Woocommerce plugin to be installed and activated.', 'product-code-for-woocommerce') . '</p>
         </div>';
 	}
 
@@ -463,8 +463,8 @@ class PCFW_Services {
 
 		$atts = shortcode_atts(array(
 			'id'            => '',
-			'pc_label'      => get_option('product_code_text', __('Product Code:', 'pandastore')),
-			'pcs_label'	=> get_option('product_code_text_second', __('Product Code Second:', 'pandastore')),
+			'pc_label'      => get_option('product_code_text', __('Product Code:', 'product-code-for-woocommerce')),
+			'pcs_label'	=> get_option('product_code_text_second', __('Product Code Second:', 'product-code-for-woocommerce')),
 			'wrapper'       => is_shop() ? 'div' : 'span',
 			'wrapper_code'  => 'span',
 			'class_wrapper' => 'pcfw_code_wrapper',

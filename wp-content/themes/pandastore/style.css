@@ -20,7 +20,11 @@ body.loaded-nav {
 .bypostauthor {
   display: block;
 }
-
+@media (max-width:575px) {
+  .woocommerce-tabs tbody th {
+    width: 178px;
+  }
+}
 .gallery-caption,
 .wp-caption-text {
   font-size: 13px;
@@ -779,6 +783,56 @@ label[for="shipping_method_0_flat_rate8"] .woocommerce-Price-amount.amount,
 label[for="shipping_method_0_flat_rate10"] .woocommerce-Price-amount.amount {
   font-size: initial;
 }
+.wo_productcode table tbody tr th {
+  border-bottom: 0;
+  padding-left: 0;
+  padding-top: 8px;
+}
+.wo_productcode table tbody tr td{
+  border-bottom: 0;
+  padding-right:0;
+  padding-left: 0;
+  padding-top: 9px;
+}
+
+.product-meta-inner table tbody tr th {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.product-ean table,.wo_productcode table {
+  margin-bottom: 0;
+}
+.product-ean table tbody tr th {
+  border-bottom: 0;
+  padding-left: 0;
+  padding-top: 0px;
+  padding-bottom: 7px;
+  font-weight: 400;
+}
+
+.product-ean table tbody tr td {
+  border-bottom: 0;
+  padding-right:0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.product-meta-inner table tbody tr th {
+  padding-right: 1rem;
+  padding-left: 0;;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+.product-meta-inner table tbody tr td {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+.product-may-differ {
+  text-align: center;
+}
 .wo_productcode strong {
   font-weight: 400;
   color: #54524d;
@@ -790,6 +844,8 @@ label[for="shipping_method_0_flat_rate10"] .woocommerce-Price-amount.amount {
 }
 .single-product .product_meta .wo_productcode {
   line-height: 2.75;
+  color: #54524d;
+  text-transform: uppercase;
 }
 .single-product .top-product .content-subtitle {
   font-size: 2.25em;
@@ -1952,11 +2008,24 @@ body.single-product .top-product .overlay-dark {
   z-index: 1;
   position: relative;
 }
+span.without-delivery {
+  font-size: 1.4rem;
+}
 .cart-actions {
   display: block;
 }
+.cart-title {
+  text-transform: none  !important;
+}
 .cart-title-flex {
   display: flex;
+  justify-content: end;
+  gap: 5rem;
+  padding-bottom: 6rem;
+}
+.cart-title-flex  .woocommerce-Price-amount{
+  font-size: 2.3rem;
+  font-weight: 500;
 }
 body.single-product .header .bottom_bar {
   padding: 3rem 0rem 0rem;
@@ -2178,6 +2247,12 @@ body.single-product .header .bottom_bar {
   .header .bottom_bar > .container-fluid {
     padding-bottom: 3rem;
   }
+  .ean_wrapper table tbody tr th,
+  .product-meta-inner table tbody tr th,
+  .wo_productcode table tbody tr th {
+    width: 42rem;
+  }
+  
 }
 
 @media (min-width: 992px) {
